@@ -1,0 +1,456 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.container .login-view {
+  padding: 48px 20px 70px 20px;
+}
+.container .login-view .login-view__title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.13px;
+  line-height: 27px;
+  color: #212121;
+  margin-bottom: 42px;
+}
+.container .login-view .login-view__email-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+.container .login-view .login-view__email-box .box-input__title {
+  font-size: 13px;
+  line-height: 16px;
+  color: #616161;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+.container .login-view .login-view__email-box .box-input__input {
+  font-size: 16px;
+  line-height: 19px;
+  color: #bdbdbd;
+  font-weight: 500;
+  padding-bottom: 11px;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #bdbdbd;
+}
+.container .login-view .login-view__email-box .box-input__input.disabled {
+  pointer-events: none;
+}
+.container .login-view .login-view__email-box .box-input__input::placeholder {
+  color: #bdbdbd;
+}
+.container .login-view .login-view__email-box .box-input__input:focus {
+  border-bottom: 1px solid #3c5afe;
+  color: #424242;
+  transition: border-bottom-color 0.6s ease-out;
+  transition: color 0.2s ease-out;
+}
+.container .login-view .login-view__email-box .box-input__textarea-section {
+  font-size: 14px;
+  color: #bdbdbd;
+  font-weight: 500;
+  min-height: 231px;
+  border: none;
+  width: 100%;
+  resize: none;
+  word-break: break-word;
+  line-height: 19px;
+}
+.container .login-view .login-view__email-box .box-input__textarea-section:focus {
+  color: #424242;
+}
+.container .login-view .login-view__email-box .box-input__dropdown {
+  position: absolute;
+  top: 64px;
+  max-height: 132px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1) inset;
+  list-style: none;
+}
+.container .login-view .login-view__email-box .box-input__icon-input {
+  position: absolute;
+  top: 33px;
+  right: 9px;
+}
+.container .login-view .login-view__email-box .box-input__icon-input.--right-side {
+  right: 0;
+}
+.container .login-view .login-view__email-box .box-input__warn {
+  margin-top: 1px;
+  line-height: 15px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #c158dc;
+}
+.container .login-view .login-view__password {
+  position: relative;
+  margin-bottom: 30px;
+}
+.container .login-view .login-view__password .box-input__title {
+  font-size: 13px;
+  line-height: 16px;
+  color: #616161;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+.container .login-view .login-view__password .box-input__input {
+  font-size: 16px;
+  line-height: 19px;
+  color: #bdbdbd;
+  font-weight: 500;
+  padding-bottom: 11px;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #bdbdbd;
+}
+.container .login-view .login-view__password .box-input__input.disabled {
+  pointer-events: none;
+}
+.container .login-view .login-view__password .box-input__input::placeholder {
+  color: #bdbdbd;
+}
+.container .login-view .login-view__password .box-input__input:focus {
+  border-bottom: 1px solid #3c5afe;
+  color: #424242;
+  transition: border-bottom-color 0.6s ease-out;
+  transition: color 0.2s ease-out;
+}
+.container .login-view .login-view__password .box-input__textarea-section {
+  font-size: 14px;
+  color: #bdbdbd;
+  font-weight: 500;
+  min-height: 231px;
+  border: none;
+  width: 100%;
+  resize: none;
+  word-break: break-word;
+  line-height: 19px;
+}
+.container .login-view .login-view__password .box-input__textarea-section:focus {
+  color: #424242;
+}
+.container .login-view .login-view__password .box-input__dropdown {
+  position: absolute;
+  top: 64px;
+  max-height: 132px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1) inset;
+  list-style: none;
+}
+.container .login-view .login-view__password .box-input__icon-input {
+  position: absolute;
+  top: 33px;
+  right: 9px;
+}
+.container .login-view .login-view__password .box-input__icon-input.--right-side {
+  right: 0;
+}
+.container .login-view .login-view__password .box-input__warn {
+  margin-top: 1px;
+  line-height: 15px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #c158dc;
+}
+.container .login-view .login-view__box-social-actions {
+  padding: 4px 10px;
+}
+.container .login-view .login-view__box-social-actions .social-item {
+  box-shadow: 0 3px 10px 0 #e5e5e5;
+  background-color: #ffffff;
+  height: 60px;
+  padding-left: 3px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.container .login-view .login-view__box-social-actions .social-item .social-item__left-content {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  padding: 15px;
+}
+.container .login-view .login-view__box-social-actions .social-item .social-item__content {
+  flex: 1;
+  color: #424242;
+  letter-spacing: -0.1px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.container .login-view .login-view__box-social-actions .social-item .social-item__right-content {
+  height: 24px;
+  padding: 10px;
+}
+
+.footer-screen {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+  background-color: #ffffff;
+}
+.footer-screen .footer-item {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.09px;
+  line-height: 18px;
+  color: #9b9b9b;
+}
+.footer-screen .divider-vertical {
+  border-top: none;
+  border-right: 1px solid #9b9b9b;
+  margin: 0 14px 0 15px;
+  height: 14px;
+}
+
+/*# sourceMappingURL=styles.css.map */

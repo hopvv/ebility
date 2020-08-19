@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport"
+				content="width=device-width, height=device-height, initial-scale=1.0, target-densityDpi=device-dpi, minimal-ui">
+
+	<meta name="format-detection" content="telephone=no">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+				rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="../commonStyle/animation.css">
+
+</head>
+<body>
+<!--   Top header   -->
+<header class="header-screen">
+	<div class="main-menu-bar" role="menubar">
+		<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button" id="buttonBack"/>
+		<div class="header-content left-content">
+			비밀번호 찾기 결과
+		</div>
+		<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button hidden" id="buttonClose"/>
+	</div>
+</header>
+
+<!-- Here is our page's main content -->
+<main class="container">
+	<article class="reset-password-view">
+
+		<div class="box-input --box-top-view">
+			<div class="box-input__title">이메일 주소</div>
+			<input class="box-input__input" type="text" value="Weble34**@naver.com" readonly/>
+		</div>
+
+		<div class="reset-password-view__result-button">
+			<div class="button ">인증완료</div>
+		</div>
+
+		<div class="reset-password-view__title">신규로 사용할 비밀번호를 입력하세요.</div>
+
+		<div class="box-input">
+			<div class="box-input__title">비밀번호</div>
+			<input class="box-input__input" type="text" value="홍길동" autofocus/>
+			<img class="box-input__icon-input" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<div class="box-input__warn">영문, 숫자조합 8자리 이상 입력해주세요.</div>
+		</div>
+		<div class="box-input">
+			<div class="box-input__title">비밀번호</div>
+			<input class="box-input__input" type="text" value="홍길동" autofocus/>
+			<img class="box-input__icon-input" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<div class="box-input__warn">비밀번호가 일치하지 않습니다.</div>
+		</div>
+	</article>
+</main>
+
+<!-- And here is our main footer that is used across all the pages of our website -->
+<footer class="footer-screen">
+	<div class="button button-full-width no-radius active">
+		다음
+	</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,905 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.header-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.header-screen .main-menu-bar {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-screen .main-menu-bar .left-button {
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.header-screen .main-menu-bar .header-content {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01px;
+  color: #212121;
+}
+.header-screen .main-menu-bar .header-content.left-content {
+  flex: 1;
+}
+.header-screen .main-menu-bar .right-button {
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.header-screen .main-menu-bar.no-left {
+  padding-left: 20px;
+}
+.header-screen .main-menu-bar .header-content {
+  display: flex;
+  align-items: center;
+}
+.header-screen .main-menu-bar .header-content .icon-content {
+  margin-right: 5px;
+}
+.header-screen .main-menu-bar .right-button {
+  width: 24px;
+}
+
+.container {
+  padding-top: 50px;
+}
+.container .conversation-app-page {
+  padding: 30px 20px 62px 20px;
+}
+.container .conversation-app-page .conversation-app-page__title {
+  font-size: 18px;
+  line-height: 28px;
+  color: #212121;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+.container .conversation-app-page .box-input {
+  position: relative;
+  margin-bottom: 30px;
+}
+.container .conversation-app-page .box-input .box-input__title {
+  font-size: 13px;
+  line-height: 16px;
+  color: #616161;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+.container .conversation-app-page .box-input .box-input__input {
+  font-size: 16px;
+  line-height: 19px;
+  color: #bdbdbd;
+  font-weight: 500;
+  padding-bottom: 11px;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #bdbdbd;
+}
+.container .conversation-app-page .box-input .box-input__input.disabled {
+  pointer-events: none;
+}
+.container .conversation-app-page .box-input .box-input__input::placeholder {
+  color: #bdbdbd;
+}
+.container .conversation-app-page .box-input .box-input__input:focus {
+  border-bottom: 1px solid #3c5afe;
+  color: #424242;
+  transition: border-bottom-color 0.6s ease-out;
+  transition: color 0.2s ease-out;
+}
+.container .conversation-app-page .box-input .box-input__textarea-section {
+  font-size: 14px;
+  color: #bdbdbd;
+  font-weight: 500;
+  min-height: 231px;
+  border: none;
+  width: 100%;
+  resize: none;
+  word-break: break-word;
+  line-height: 19px;
+}
+.container .conversation-app-page .box-input .box-input__textarea-section:focus {
+  color: #424242;
+}
+.container .conversation-app-page .box-input .box-input__dropdown {
+  position: absolute;
+  top: 64px;
+  max-height: 132px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1) inset;
+  list-style: none;
+}
+.container .conversation-app-page .box-input .box-input__icon-input {
+  position: absolute;
+  top: 33px;
+  right: 9px;
+}
+.container .conversation-app-page .box-input .box-input__icon-input.--right-side {
+  right: 0;
+}
+.container .conversation-app-page .box-input .box-input__warn {
+  margin-top: 1px;
+  line-height: 15px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #c158dc;
+}
+
+.footer-screen {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 62px;
+  display: flex;
+}
+.footer-screen .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  color: #424242;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  padding: 9px 15px 10px;
+}
+.footer-screen .button.small-button {
+  padding: 7px 15px 8px;
+}
+.footer-screen .button.active {
+  background-color: #3c5afe;
+  font-weight: 700;
+  color: #ffffff;
+}
+.footer-screen .button.button-full-width {
+  width: 100%;
+}
+.footer-screen .button.no-radius {
+  border-radius: 0;
+}
+.footer-screen .button.large-button {
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  line-height: 20px;
+  padding: 11px 33px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=styles.css.map */

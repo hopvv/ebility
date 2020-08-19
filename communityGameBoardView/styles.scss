@@ -1,0 +1,150 @@
+@import "../commonStyle/styles";
+@import "../CommonStyle/global";
+@import "../commonStyle/gameCardItem";
+@import "../commonStyle/menuSlide";
+@import "../commonStyle/navBar";
+@import "../commonStyle/playerDetail";
+@import "../commonStyle/menuBar";
+@import "../commonStyle/counterButton";
+@import "../commonStyle/replyBox";
+
+.header-screen {
+  @include fixed-top;
+  z-index: $zIndexHeader;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1);
+  background-color: $backgroundColorBody;
+
+  .main-menu-bar {
+    position: relative;
+    @include main-menu-bar;
+
+    .left-button {
+      @include icon-header;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+
+      .icon-content {
+        @include icon-header;
+        margin-right: 5px;
+      }
+    }
+
+    .right-button {
+      width: 24px;
+    }
+  }
+}
+
+.container {
+  padding: 50px $paddingCommon;
+
+  .community-detail-view {
+    padding-top: 24px;
+
+    .community-detail-view__title {
+      font-weight: $fontWeightBold;
+      font-size: $fontHeaderTitle;
+      color: $colorHeaderActive;
+      letter-spacing: -0.01px;
+      line-height: 24px;
+      padding-bottom: 6px;
+    }
+
+    .divider {
+      @include divider;
+      margin-top: 15px;
+      margin-bottom: 17px;
+    }
+
+    .community-detail-view__post-owner {
+      display: flex;
+      align-items: center;
+
+      .community-detail-view__image-owner {
+        @include circle;
+        @include image-user;
+        width: 42px;
+        height: 42px;
+        margin-right: 10px;
+        background-color: $colorInActive;
+      }
+
+      .community-detail-view__owner {
+        flex: 1;
+
+        .community-detail-view__owner-name {
+          font-weight: $fontWeightMedium;
+          font-size: $fontBody;
+          letter-spacing: -0.09px;
+          color: $colorHeaderActive;
+          line-height: 17px;
+          margin-bottom: 1px;
+        }
+
+        .community-detail-view__post-detail {
+          display: flex;
+          align-items: center;
+          padding-top: 4px;
+          padding-bottom: 3px;
+
+          .community-detail-view__post-detail-item {
+            margin-right: 17px;
+            font-weight: $fontWeightLight;
+            font-size: $fontXXSmall;
+            letter-spacing: -0.08px;
+            color: $colorBrownishGrey61;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .community-detail-view__post-actions {
+        display: flex;
+        align-items: center;
+
+        .community-detail-view__action {
+          padding: 8px;
+          margin-left: 14px;
+          cursor: pointer;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .community-detail-view__post-des {
+      font-weight: $fontWeightRegular;
+      font-size: $fontXHeader;
+      color: $colorHeaderActive;
+      letter-spacing: -0.1px;
+      line-height: 21px;
+      padding-bottom: 15px;
+    }
+
+    .community-detail-view__comment-wrapper {
+
+      &.replies-box {
+        @include replies-box;
+      }
+    }
+  }
+}
+
+.footer-screen {
+  @include fixed-bottom;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  background-color: $backgroundColorBody;
+
+  .tabs {
+    @include tabs;
+  }
+}

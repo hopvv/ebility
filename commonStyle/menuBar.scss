@@ -1,0 +1,38 @@
+@import "./global";
+@import "./styles";
+
+@mixin menu-bar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  .left-button {
+    padding: 8px $paddingCommon;
+    cursor: pointer;
+  }
+
+  .header-content {
+    font-size: $fontHeaderTitle;
+    font-weight: $fontWeightBold;
+    letter-spacing: -0.01px;
+    color: $colorHeaderActive;
+
+    &.left-content {
+      flex: 1;
+    }
+  }
+
+  .right-button {
+    padding: 8px $paddingCommon;
+    cursor: pointer;
+  }
+
+  &.no-left {
+    padding-left: $paddingCommon;
+  }
+}
+
+@mixin main-menu-bar {
+  @include menu-bar;
+  justify-content: space-between;
+}

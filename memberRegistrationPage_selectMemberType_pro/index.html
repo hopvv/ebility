@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport"
+				content="width=device-width, height=device-height, initial-scale=1.0, target-densityDpi=device-dpi, minimal-ui">
+
+	<meta name="format-detection" content="telephone=no">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+				rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="../commonStyle/animation.css">
+
+</head>
+<body>
+<!--   Top header   -->
+<header class="header-screen">
+	<div class="main-menu-bar" role="menubar">
+		<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button" id="buttonMenu"/>
+		<div class="header-content left-content">
+			회원가입
+		</div>
+	</div>
+</header>
+
+<!-- Here is our page's main content -->
+<main class="container">
+	<article class="select-member-type-view">
+		<div class="select-member-type-view__title">선택해주세요</div>
+		<div class="card">
+			<div class="card__title">User 가입</div>
+			<div class="card__des">게임&선수의 정보를 확인하고 싶어요!</div>
+		</div>
+		<div class="card active">
+			<div class="card__title">Pro Gamer 가입</div>
+			<div class="card__des">프로필 및 계약관리를 하고 싶어요! </div>
+			<div class="card__des">프로게이머에 대한 설명 좀 더 추가 추가추가추가 내용 추가 </div>
+		</div>
+	</article>
+</main>
+
+<!-- And here is our main footer that is used across all the pages of our website -->
+
+<footer class="footer-screen">
+	<div class="button button-full-width no-radius active">
+		가입하기
+	</div>
+</footer>
+
+
+<script language="JavaScript">
+	function navigateToPage(url) {
+		window.open(url, '_self');
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--    <meta name="viewport" content="minimal-ui">-->
+	<meta name="viewport"
+				content="width=device-width, height=device-height, initial-scale=1.0, target-densityDpi=device-dpi, minimal-ui">
+
+	<meta name="format-detection" content="telephone=no">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+				rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="../commonStyle/animation.css">
+
+</head>
+<body>
+<!--   Top header   -->
+<header class="header-screen">
+	<div class="main-menu-bar" role="menubar">
+		<img alt="left-menu" src="../assets/ic_main_menu.svg" class="left-button" id="buttonMenu"/>
+		<div class="header-content">
+
+		</div>
+		<img alt="right-menu" src="../assets/ic_main_up_b.svg" class="right-button rotate-180" id="buttonDropdown"/>
+
+		<div class="list-item-dropdown hidden" id="listItemDropdown">
+			<ul class="list-items animated animatedFadeInUp fadeIn">
+				<li class="item">리그오브레전드</li>
+				<li class="item">배틀그라운드</li>
+				<li class="item">스타크래프트</li>
+				<li class="item">포트나이트</li>
+				<li class="item">피파온라인</li>
+				<li class="item">던전앤파이터</li>
+			</ul>
+		</div>
+
+		<div class="menu-slide" id="menuSlide">
+			<div class="menu-content menu-slide-right-animation">
+				<div class="menu-slide__login">
+					<img alt="close" class="menu-slide__close-icon" src="../assets/menu/btn_close.svg" id="icCloseMenu"/>
+					<div class="user-box-detail">
+						<div class="user-avatar-circle">
+							<img class="user-avatar-circle__user-image" alt="user-avatar" src="../assets/menu/ic_profile.png"/>
+						</div>
+
+						<div class="user-box-detail__right-content">
+							<div class="user-box-detail__user-name">로그인해주세요</div>
+							<div class="user-box-detail__user-type">회원타입</div>
+							<div class="user-box-detail__actions">
+								<div class="button small-button">로그인</div>
+								<div class="button small-button">회원가입</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="menu-slide__list-menu">
+					<ul class="menu">
+						<li class="menu-item">내 프로필 <img alt="right-icon" class="menu-item__icon-right" src="../assets/menu/ic-arrow-right-menu.svg"/></li>
+						<li class="menu-item">게임바로가기 <img alt="right-icon" class="menu-item__icon-right rotate-90" src="../assets/menu/ic-arrow-right-menu.svg"/></li>
+						<li class="menu-item menu-sub-item">리그오브레전드 <img alt="right-icon" class="menu-item__icon-right" src="../assets/menu/ic-arrow-right-menu.svg"/></li>
+						<li class="menu-item menu-sub-item">배들그라운드 <img alt="right-icon" class="menu-item__icon-right" src="../assets/menu/ic-arrow-right-menu.svg"/></li>
+						<li class="menu-item">공지사항 <img alt="right-icon" class="menu-item__icon-right" src="../assets/menu/ic-arrow-right-menu.svg"/></li>
+						<li class="menu-item">자주묻는질문 <img alt="right-icon" class="menu-item__icon-right" src="../assets/menu/ic-arrow-right-menu.svg"/></li>
+						<li class="menu-item">1:1 문의하기 <img alt="right-icon" class="menu-item__icon-right" src="../assets/menu/ic-arrow-right-menu.svg"/></li>
+						<li class="menu-item">이용약관 및 개인정보처리방침 <img alt="right-icon" class="menu-item__icon-right" src="../assets/menu/ic-arrow-right-menu.svg"/></li>
+<!--						<li class="menu-item">로그아웃</li>-->
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Here is our page's main content -->
+<main class="container">
+	<article class="game_list">
+		<div class="game-card-item blue-item">
+			<div class="card-content">
+				<div class="game-layer"></div>
+				<img class="image-game" src="../assets/lol/lol-card-1.jpg" alt="game-card"/>
+				<div class="game-name">리그오브레전드</div>
+				<div class="game-intro">세계 최고의
+					MOBA 게임</div>
+				<div class="game-count">
+					<img class="icon-count" src="../assets/gameCard/icCircleUserWhite.svg"/>
+					268
+				</div>
+			</div>
+			<div class="card-footer">
+				<div class="button">게임정보</div>
+				<div class="button">선수정보</div>
+			</div>
+		</div>
+		<div class="game-card-item purple-item">
+			<div class="card-content">
+				<div class="game-layer"></div>
+				<img class="image-game" src="../assets/lol/lol-card-2.jpg" alt="game-card"/>
+				<div class="game-name">리그오브레전드</div>
+				<div class="game-intro">세계 최고의
+					MOBA 게임</div>
+				<div class="game-count">
+					<img class="icon-count" src="../assets/gameCard/icCircleUserWhite.svg"/>
+					268
+				</div>
+			</div>
+			<div class="card-footer">
+				<div class="button">게임정보</div>
+				<div class="button">선수정보</div>
+			</div>
+		</div>
+	</article>
+</main>
+
+<!-- And here is our main footer that is used across all the pages of our website -->
+
+<footer class="footer-screen">
+	<div class="footer-main">
+		<div class="footer-main__title">&copy;e-bility</div>
+		<div class="footer-main__sub-contents">
+			<div class="footer-main__sub-content">
+				이용약관
+			</div>
+			<div class="footer-main__sub-content">
+				개인정보처리방침
+			</div>
+			<div class="footer-main__sub-content">
+				고객센터
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+<script language="javascript">
+	window.onload = function () {
+		const buttonDropdown = document.getElementById("buttonDropdown");
+		if (buttonDropdown) {
+			buttonDropdown.addEventListener('click', toggleDropdown)
+		}
+
+		const buttonMenu = document.getElementById("buttonMenu");
+		if (buttonMenu) {
+			buttonMenu.addEventListener('click', toggleSlide)
+		}
+
+		const icCloseMenu = document.getElementById("icCloseMenu");
+		if (icCloseMenu) {
+			icCloseMenu.addEventListener('click', toggleSlide)
+		}
+	}
+
+	function toggleSlide() {
+		const menuSlide = document.getElementById("menuSlide");
+		if (menuSlide) {
+			if (menuSlide.classList.contains("hidden")) {
+				// Show dropdown
+				menuSlide.classList.remove("hidden")
+			} else {
+				// Hide dropdown
+				menuSlide.classList.add("hidden")
+			}
+		}
+	}
+
+	function toggleDropdown() {
+		const listItemDropdown = document.getElementById("listItemDropdown");
+		if (listItemDropdown) {
+			if (listItemDropdown.classList.contains("hidden")) {
+				// Show dropdown
+				listItemDropdown.classList.remove("hidden")
+			} else {
+				// Hide dropdown
+				listItemDropdown.classList.add("hidden")
+			}
+		}
+	}
+</script>
+</html>

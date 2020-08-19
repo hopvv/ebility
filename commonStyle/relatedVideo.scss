@@ -1,0 +1,60 @@
+@import "./global";
+@import "./styles";
+
+@mixin related-video {
+  .related-video__title {
+    font-weight: $fontWeightBold;
+    font-size: $fontXHeader;
+    letter-spacing: -0.1px;
+    color: $colorHeaderActive;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .related-video__videos {
+    .related-video__item {
+      @include related-video-item;
+      margin-bottom: 21px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@mixin related-video-item {
+  display: flex;
+  .related-video__image {
+    width: 44.7%;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 8px;
+  }
+  .related-video__details {
+    .related-video__title {
+      font-weight: $fontWeightMedium;
+      font-size: $fontBody;
+      letter-spacing: -0.09px;
+      color: $colorHeaderActive;
+      line-height: 18px;
+      margin-bottom: 7px;
+    }
+
+    .related-video__views-count {
+      font-weight: $fontWeightRegular;
+      font-size: $fontXSmall;
+      letter-spacing: -0.07px;
+      color: $colorBrownGrey;
+      line-height: 15px;
+    }
+
+    .related-video__date-created {
+      font-weight: $fontWeightRegular;
+      font-size: $fontXSmall;
+      letter-spacing: -0.07px;
+      color: $colorBrownGrey;
+      line-height: 15px;
+    }
+  }
+}

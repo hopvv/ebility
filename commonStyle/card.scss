@@ -1,0 +1,39 @@
+@import "./styles";
+@import "./global";
+
+@mixin card {
+  background-color: white;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 20px 30px 22px 30px;
+
+  .card__title {
+    font-size: $fontHeaderXXTitle;
+    line-height: 23px;
+    color: $colorHeaderActive;
+    font-weight: $fontWeightBold;
+    letter-spacing: -0.13px;
+    margin-bottom: 7px;
+  }
+  .card__des {
+    line-height: 20px;
+    font-size: $fontXHeader;
+    color: $colorBrownishGrey61;
+    font-weight: $fontWeightRegular;
+    letter-spacing: -0.1px;
+  }
+
+  &.active {
+    background-color: $colorActive;
+    line-height: 27px;
+    padding: 16px 30px 18px 30px;
+
+    .card__title {
+      color: $colorWhite;
+      margin-bottom: 4px;
+    }
+    .card__des {
+      color: $colorWhite;
+    }
+  }
+}

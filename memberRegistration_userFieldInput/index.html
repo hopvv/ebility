@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport"
+				content="width=device-width, height=device-height, initial-scale=1.0, target-densityDpi=device-dpi, minimal-ui">
+
+	<meta name="format-detection" content="telephone=no">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+				rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="../commonStyle/animation.css">
+
+</head>
+<body>
+<!--   Top header   -->
+<header class="header-screen">
+	<div class="main-menu-bar" role="menubar">
+		<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button" id="buttonMenu"/>
+		<div class="header-content left-content">
+			User 회원가입
+		</div>
+	</div>
+</header>
+
+<!-- Here is our page's main content -->
+<main class="container">
+	<article class="user-input-view">
+		<div class="box-input">
+			<div class="box-input__title">이름</div>
+			<input class="box-input__input" type="text" value="입력" autofocus/>
+		</div>
+		<div class="box-input">
+			<div class="box-input__title">이메일</div>
+			<input class="box-input__input" type="text" value="회원가입이 안되요"/>
+		</div>
+		<div class="box-input">
+			<div class="box-input__title">연락처</div>
+			<input class="box-input__input" type="text" value="입력"/>
+		</div>
+		<div class="box-input">
+			<div class="box-input__title">연락처</div>
+			<input class="box-input__input" type="password" value="입력"/>
+			<img class="box-input__icon-input" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<div class="box-input__warn">영문, 숫자조합 8자리 이상 입력해주세요.</div>
+		</div>
+		<div class="box-input">
+			<div class="box-input__title">연락처</div>
+			<input class="box-input__input" type="text" value="입력"/>
+			<img class="box-input__icon-input" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
+			<div class="box-input__warn">비밀번호가 일치하지 않습니다.</div>
+		</div>
+
+		<div class="agree-condition-box">
+			<img src="../assets/common/ic_circle-untick.svg" class="agree-condition-box__icon-tick"/>
+			<div class="agree-condition-box__texts">
+				<a class="agree-condition-box__text --term-of-use" href="#">이용약관</a>
+				<span class="agree-condition-box__text">및</span>
+				<a class="agree-condition-box__text --privacy-statement" href="#">개인정보취급방침</a>
+				<span class="agree-condition-box__text">에 동의합니다.</span>
+			</div>
+		</div>
+	</article>
+</main>
+
+<!-- And here is our main footer that is used across all the pages of our website -->
+
+<footer class="footer-screen">
+	<div class="button button-full-width no-radius active">
+		가입하기
+	</div>
+</footer>
+
+
+<script language="JavaScript">
+	function navigateToPage(url) {
+		window.open(url, '_self');
+	}
+</script>
+</body>
+</html>

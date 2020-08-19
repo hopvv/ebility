@@ -1,0 +1,358 @@
+@import "./global";
+@import "./styles";
+
+@mixin player-product {
+  .title {
+    font-size: $fontXHeader;
+    font-weight: $fontWeightBold;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: $colorInfoDetail;
+  }
+  .description {
+    font-size: $fontBody;
+    font-weight: $fontWeightRegular;
+    line-height: 18px;
+    margin-bottom: 10px;
+    color: $colorInfoDetail;
+  }
+  .button {
+    @include button;
+    display: inline-flex;
+  }
+}
+
+@mixin player-detail-common {
+  display: flex;
+  align-items: center;
+
+  .image-user {
+    @include image-user;
+    width: 69px;
+    height: 69px;
+    margin-right: 14px;
+    border-radius: 4px;
+  }
+
+  .user-detail {
+    .user-detail__title {
+      font-size: $fontHeader;
+      font-weight: $fontWeightBold;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      color: $colorInfoDetail;
+      font-size: $fontXXSmall;
+      line-height: 17px;
+      margin-top: 1px;
+
+      .info__title {
+        font-weight: $fontWeightBold;
+        margin-right: 10px;
+      }
+
+      .info__detail {
+        font-weight: $fontWeightLight;
+      }
+    }
+  }
+}
+
+@mixin player-detail-profile {
+  padding: 25px $paddingCommon;
+  .player-detail-profile__player {
+    @include player-detail-profile__player;
+  }
+
+  .player-detail-profile__content {
+    padding-top: 43px;
+    padding-bottom: 120px;
+
+    .player-detail-profile__content-data {
+      min-height: 134px;
+
+      .player-detail-profile__content-title {
+        font-weight: $fontWeightBold;
+        font-size: $fontXHeader;
+        margin-bottom: 11px;
+        color: $colorHeaderActive;
+      }
+
+      .player-detail-profile__content-data-detail {
+        list-style: none;
+
+        .player-detail-profile__content-data-detail-item {
+          font-size: $fontBody;
+          color: $colorInfoDetail;
+
+          &:before {
+            content: "·";
+          }
+        }
+
+        .player-detail-profile__content-data-equipment-item {
+          .player-product {
+            @include player-product;
+          }
+        }
+
+        .divider {
+          @include divider;
+        }
+      }
+    }
+  }
+}
+
+@mixin player-detail-profile__player {
+  @include player-detail-common;
+  .image-user {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 0;
+  }
+
+  .user-detail {
+    .user-detail__title {
+      margin-top: 3px;
+      font-size: $fontHeaderTitle;
+      font-weight: $fontWeightBold;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      color: $colorInfoDetail;
+      font-size: $fontXHeader;
+      line-height: 20px;
+
+      .info__title {
+        font-weight: $fontWeightBold;
+        margin-right: 10px;
+      }
+
+      .info__detail {
+        font-weight: $fontWeightRegular;
+      }
+    }
+  }
+}
+
+@mixin player-ranking-item {
+  display: flex;
+
+  .player-ranking-item__left-content {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+    .player-ranking-item__image-user {
+      width: 35px;
+      height: 35px;
+      margin-left: 14px;
+    }
+
+    .player-ranking-item__number-rank {
+      font-weight: $fontWeightMedium;
+      color: $colorInfoDetail;
+      font-size: $fontXXHeader;
+      line-height: 22px;
+    }
+  }
+
+  .player-ranking-item__right-content {
+    .player-ranking-item__title {
+      font-weight: $fontWeightBold;
+      color: $colorHeaderActive;
+      font-size: $fontBody;
+      line-height: 18px;
+      margin-bottom: 1px;
+    }
+
+    .player-ranking-item__rate {
+      font-weight: $fontWeightMedium;
+      color: $colorBrownishGrey;
+      font-size: $fontXXSmall;
+      line-height: 17px;
+    }
+  }
+
+  &.top-three {
+    .player-ranking-item__left-content {
+      position: relative;
+      margin-right: 15px;
+      border: 1px solid $colorActive;
+      width: 63px;
+      height: 63px;
+
+      .player-ranking-item__image-user {
+        @include image-user;
+        width: 63px;
+        height: 63px;
+        margin-left: 0;
+      }
+
+      .player-ranking-item__number-rank {
+        @include center-items;
+        position: absolute;
+        background-color: $colorActive;
+        color: white;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        font-size: $fontXXSmall;
+        line-height: $fontXXSmall;
+      }
+    }
+
+    .player-ranking-item__right-content {
+
+      .player-ranking-item__title {
+        font-size: $fontXHeader;
+        font-weight: $fontWeightBold;
+        color: $colorHeaderActive;
+        line-height: 20px;
+        margin-bottom: 5px;
+      }
+
+      .player-ranking-item__rank-detail {
+        display: flex;
+        align-items: center;
+        font-size: $fontHeader;
+        font-weight: $fontWeightMedium;
+        color: $colorInfoDetail;
+        margin-bottom: 1px;
+
+        .player-ranking-item__rank-image {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+          margin-right: 3px;
+        }
+      }
+
+      .player-ranking-item__rate {
+        line-height: 18px;
+        font-size: $fontBody;
+        font-weight: $fontWeightRegular;
+        color: $colorBrownishGrey;
+      }
+    }
+  }
+}
+
+@mixin player-statics-item {
+  display: flex;
+
+  .player-statics-item__left-content {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+    .player-statics-item__image-user {
+      width: 35px;
+      height: 35px;
+      margin-left: 14px;
+    }
+
+    .player-statics-item__number-rank {
+      font-weight: $fontWeightMedium;
+      color: $colorInfoDetail;
+      font-size: $fontXXHeader;
+      line-height: 22px;
+    }
+  }
+
+  .player-statics-item__right-content {
+    display: flex;
+    align-items: center;
+
+    .player-statics-item__title {
+      font-weight: $fontWeightBold;
+      color: $colorHeaderActive;
+      font-size: $fontBody;
+      line-height: 18px;
+      margin-bottom: 1px;
+      margin-right: 15px;
+    }
+
+    .player-statics-item__details {
+      .player-ranking-item__rank-detail {
+        margin-bottom: 2px;
+        font-weight: $fontWeightMedium;
+        color: $colorBrownishGrey;
+        font-size: $fontXXSmall;
+        line-height: 17px;
+      }
+      .player-statics-item__rate, .player-statics-item__rank-detail {
+        font-weight: $fontWeightMedium;
+        color: $colorBrownishGrey;
+        font-size: $fontXXSmall;
+        line-height: 17px;
+      }
+    }
+  }
+
+  &.top-three {
+    .player-statics-item__left-content {
+      position: relative;
+      margin-right: 15px;
+      border: 1px solid $colorActive;
+      width: 63px;
+      height: 63px;
+
+      .player-statics-item__image-user {
+        @include image-user;
+        width: 63px;
+        height: 63px;
+        margin-left: 0;
+      }
+
+      .player-statics-item__number-rank {
+        @include center-items;
+        position: absolute;
+        background-color: $colorActive;
+        color: white;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        font-size: $fontXXSmall;
+        line-height: $fontXXSmall;
+      }
+    }
+
+    .player-statics-item__right-content {
+      display: block;
+
+      .player-statics-item__title {
+        font-size: $fontXHeader;
+        font-weight: $fontWeightBold;
+        color: $colorHeaderActive;
+        line-height: 20px;
+        margin-bottom: 5px;
+        margin-right: 0px;
+      }
+
+      .player-statics-item__rank-detail {
+        font-size: $fontBody;
+        line-height: 18px;
+        font-weight: $fontWeightMedium;
+        color: $colorBrownishGrey;
+        margin-bottom: 2px;
+      }
+
+      .player-statics-item__rate {
+        line-height: 18px;
+        font-size: $fontBody;
+        font-weight: $fontWeightMedium;
+        color: $colorBrownishGrey;
+      }
+    }
+  }
+}
