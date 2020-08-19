@@ -1,0 +1,27 @@
+@import "./styles";
+@import "./global";
+
+@mixin table-info-full-border {
+  border-collapse: collapse;
+  background-color: $backgroundColorSearchBar;
+
+  table, th, td {
+    border: 1px solid $colorVeryLightPinkThree;
+    letter-spacing: -0.08px;
+    line-height: 17px;
+    font-size: $fontXXSmall;
+  }
+
+  th {
+    font-weight: $fontWeightMedium;
+    width: 57px;
+    min-height: 27px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  td {
+    font-weight: $fontWeightRegular;
+    padding: 5px 9px;
+  }
+}

@@ -1,0 +1,128 @@
+@import "../commonStyle/styles";
+@import "../CommonStyle/global";
+@import "../commonStyle/playerDetail";
+@import "../commonStyle/menuBar";
+@import "../commonStyle/communityItem";
+
+.header-screen {
+  @include fixed-top;
+  z-index: $zIndexHeader;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1);
+  background-color: $backgroundColorBody;
+
+  .main-menu-bar {
+    position: relative;
+    @include main-menu-bar;
+
+    .left-button {
+      @include icon-header;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+
+      .icon-content {
+        @include icon-header;
+        margin-right: 5px;
+      }
+    }
+
+    .right-button {
+      width: 24px;
+    }
+
+    .list-item-dropdown {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      right: 0;
+      list-style: none;
+      z-index: $zIndexDropdownList;
+      background-color: $backgroundLayerCommon;
+      height: calc(100vh - 45px);
+
+      .list-items {
+        background-color: $backgroundColorBody;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1) inset;
+
+        .item {
+          @include center-items;
+          height: 50px;
+          font-size: $fontXXHeader;
+          font-weight: $fontWeightMedium;
+          line-height: 26px;
+        }
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  .tabs-menu {
+    @include tabs;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 13px;
+
+    .tab {
+      &.active {
+
+      }
+    }
+  }
+}
+
+.container {
+  padding-top: 102px;
+
+  .search-bar {
+    @include search-bar;
+  }
+
+  .list-community-posts {
+    padding: $paddingCommon $paddingCommon 8.5px;
+
+    .list-community-posts__list-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .list-community-posts__title {
+        font-size: $fontXXHeader;
+        font-weight: $fontWeightBold;
+        letter-spacing: -0.11px;
+        line-height: 22px;
+        color: $colorHeaderActive;
+      }
+
+      .list-community-posts__icon-edit {
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    .divider {
+      @include divider;
+
+      &:first-child {
+        margin-top: 9px;
+      }
+    }
+
+    .community-article {
+      @include community-article;
+    }
+  }
+}
+
+.footer-screen {
+  @include center-items;
+  margin: 0 auto 30px auto;
+  .button {
+    @include button;
+    margin: 0 auto;
+  }
+}

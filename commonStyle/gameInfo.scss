@@ -1,0 +1,42 @@
+@import "./styles";
+@import "./global";
+@import "./socialIcon";
+@import "../commonStyle/table";
+
+@mixin game-info {
+  .game-info__game-image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 11px;
+  }
+
+  .game-info__game-description {
+    font-weight: $fontWeightRegular;
+    font-size: $fontXXSmall;
+    letter-spacing: -0.08px;
+    color: $colorBrownishGrey;
+    margin-bottom: 20px;
+  }
+
+  .game-info__social {
+    @include center-items;
+    margin-bottom: 29px;
+
+    .social-icon {
+      @include social-icon;
+    }
+  }
+
+  .game-info__table {
+    @include table-info-full-border;
+    width: 100%;
+  }
+
+  .game-info__detail {
+    margin-bottom: 21px;
+  }
+
+  .game-info__requirement {
+    margin-bottom: 30px;
+  }
+}

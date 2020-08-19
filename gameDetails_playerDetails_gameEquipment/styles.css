@@ -1,0 +1,701 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.header-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.header-screen .main-menu-bar {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-screen .main-menu-bar .left-button {
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.header-screen .main-menu-bar .header-content {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01px;
+  color: #212121;
+}
+.header-screen .main-menu-bar .header-content.left-content {
+  flex: 1;
+}
+.header-screen .main-menu-bar .right-button {
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.header-screen .main-menu-bar.no-left {
+  padding-left: 20px;
+}
+.header-screen .main-menu-bar .header-content {
+  display: flex;
+  align-items: center;
+}
+.header-screen .main-menu-bar .header-content .icon-content {
+  margin-right: 5px;
+}
+.header-screen .main-menu-bar .right-button {
+  width: 24px;
+}
+
+.container {
+  padding-top: 50px;
+}
+.container .player-detail-profile {
+  padding: 25px 20px;
+}
+.container .player-detail-profile .player-detail-profile__player {
+  display: flex;
+  align-items: center;
+}
+.container .player-detail-profile .player-detail-profile__player .image-user {
+  object-fit: cover;
+  width: 69px;
+  height: 69px;
+  margin-right: 14px;
+  border-radius: 4px;
+}
+.container .player-detail-profile .player-detail-profile__player .user-detail .user-detail__title {
+  font-size: 13px;
+  font-weight: 700;
+}
+.container .player-detail-profile .player-detail-profile__player .user-detail .info {
+  display: flex;
+  align-items: center;
+  color: #424242;
+  font-size: 11px;
+  line-height: 17px;
+  margin-top: 1px;
+}
+.container .player-detail-profile .player-detail-profile__player .user-detail .info .info__title {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.container .player-detail-profile .player-detail-profile__player .user-detail .info .info__detail {
+  font-weight: 300;
+}
+.container .player-detail-profile .player-detail-profile__player .image-user {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 0;
+}
+.container .player-detail-profile .player-detail-profile__player .user-detail .user-detail__title {
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.container .player-detail-profile .player-detail-profile__player .user-detail .info {
+  display: flex;
+  align-items: center;
+  color: #424242;
+  font-size: 14px;
+  line-height: 20px;
+}
+.container .player-detail-profile .player-detail-profile__player .user-detail .info .info__title {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.container .player-detail-profile .player-detail-profile__player .user-detail .info .info__detail {
+  font-weight: 400;
+}
+.container .player-detail-profile .player-detail-profile__content {
+  padding-top: 43px;
+  padding-bottom: 120px;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data {
+  min-height: 134px;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 11px;
+  color: #212121;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail {
+  list-style: none;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-detail-item {
+  font-size: 12px;
+  color: #424242;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-detail-item:before {
+  content: "·";
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-equipment-item .player-product .title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 5px;
+  color: #424242;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-equipment-item .player-product .description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 10px;
+  color: #424242;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-equipment-item .player-product .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  color: #424242;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  padding: 9px 15px 10px;
+  display: inline-flex;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-equipment-item .player-product .button.small-button {
+  padding: 7px 15px 8px;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-equipment-item .player-product .button.active {
+  background-color: #3c5afe;
+  font-weight: 700;
+  color: #ffffff;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-equipment-item .player-product .button.button-full-width {
+  width: 100%;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-equipment-item .player-product .button.no-radius {
+  border-radius: 0;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .player-detail-profile__content-data-equipment-item .player-product .button.large-button {
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  line-height: 20px;
+  padding: 11px 33px;
+  font-weight: 500;
+}
+.container .player-detail-profile .player-detail-profile__content .player-detail-profile__content-data .player-detail-profile__content-data-detail .divider {
+  border-top: 1px solid #eeeeee;
+  margin-top: 13.5px;
+  margin-bottom: 13.5px;
+  width: 100%;
+}
+
+.footer-screen .nav-bar {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f5f5f5;
+}
+.footer-screen .nav-bar .nav-item {
+  flex: 1;
+}
+.footer-screen .nav-bar .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 72px;
+  padding-top: 3px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #bdbdbd;
+}
+.footer-screen .nav-bar .nav-item.active {
+  color: #3c5afe;
+}
+
+/*# sourceMappingURL=styles.css.map */

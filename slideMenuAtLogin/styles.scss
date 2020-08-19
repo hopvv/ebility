@@ -1,0 +1,120 @@
+@import "../commonStyle/styles";
+@import "../CommonStyle/global";
+@import "../commonStyle/gameCardItem";
+@import "../commonStyle/menuBar";
+@import "../commonStyle/menuSlide";
+
+.header-screen {
+  @include fixed-top;
+  z-index: $zIndexHeader;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1);
+  background-color: $backgroundColorBody;
+
+  .main-menu-bar {
+    position: relative;
+    @include main-menu-bar;
+
+    .left-button {
+      @include icon-header;
+
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+
+      .icon-content {
+        @include icon-header;
+        margin-right: 5px;
+      }
+    }
+
+    .right-button {
+      width: 24px;
+    }
+
+    .list-item-dropdown {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      right: 0;
+      list-style: none;
+      z-index: $zIndexDropdownList;
+      background-color: $backgroundLayerCommon;
+      height: calc(100vh - 45px);
+
+      .list-items {
+        background-color: $backgroundColorBody;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1) inset;
+
+        .item {
+          @include center-items;
+          height: 50px;
+          font-size: $fontXXHeader;
+          font-weight: $fontWeightMedium;
+          line-height: 26px;
+        }
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  .menu-slide {
+    @include menu-slide;
+
+    .menu-content {
+      .menu-slide__login {
+
+      }
+
+      .menu-slide__list-menu {
+
+      }
+    }
+  }
+}
+
+.container {
+  padding-top: 50px;
+
+  .game_list {
+    .game-card-item {
+      @include game-card-item;
+
+      .card-footer {
+        .button {
+          margin: 0 4.5px;
+        }
+      }
+    }
+  }
+}
+
+.footer-screen {
+  .footer-main {
+    @include center-items;
+    flex-direction: column;
+    height: 108px;
+
+    .footer-main__title {
+      color: $colorBody;
+      font-size: $fontXXSmall;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .footer-main__sub-contents {
+      display: flex;
+      flex-wrap: nowrap;
+
+      .footer-main__sub-content {
+        font-size: $fontSmall;
+        color: $colorBrownishGrey;
+        margin: 0 2.5px;
+      }
+    }
+  }
+}

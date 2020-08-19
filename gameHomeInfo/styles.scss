@@ -1,0 +1,94 @@
+@import "../commonStyle/styles";
+@import "../CommonStyle/global";
+@import "../commonStyle/playerDetail";
+@import "../commonStyle/menuBar";
+@import "../commonStyle/gameInfo";
+@import "../commonStyle/relatedVideo";
+
+.header-screen {
+  @include fixed-top;
+  z-index: $zIndexHeader;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1);
+  background-color: $backgroundColorBody;
+
+  .main-menu-bar {
+    position: relative;
+    @include main-menu-bar;
+
+    .left-button {
+      @include icon-header;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+
+      .icon-content {
+        @include icon-header;
+        margin-right: 5px;
+      }
+    }
+
+    .right-button {
+      width: 24px;
+    }
+
+    .list-item-dropdown {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      right: 0;
+      list-style: none;
+      z-index: $zIndexDropdownList;
+      background-color: $backgroundLayerCommon;
+      height: calc(100vh - 45px);
+
+      .list-items {
+        background-color: $backgroundColorBody;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1) inset;
+
+        .item {
+          @include center-items;
+          height: 50px;
+          font-size: $fontXXHeader;
+          font-weight: $fontWeightMedium;
+          line-height: 26px;
+        }
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  .tabs-menu {
+    @include tabs;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 13px;
+
+    .tab {
+      &.active {
+
+      }
+    }
+  }
+}
+
+.container {
+  padding: 102px $paddingCommon 23px;
+
+  .game-info {
+    padding-top: 21px;
+    @include game-info;
+  }
+
+  .related-video {
+    @include related-video;
+  }
+}
+
+.footer-screen {
+
+}

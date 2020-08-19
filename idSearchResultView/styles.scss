@@ -1,0 +1,72 @@
+@import "../commonStyle/styles";
+@import "../CommonStyle/global";
+@import "../commonStyle/gameCardItem";
+@import "../commonStyle/menuSlide";
+@import "../commonStyle/navBar";
+@import "../commonStyle/playerDetail";
+@import "../commonStyle/menuBar";
+@import "../commonStyle/counterButton";
+@import "../commonStyle/boxResult";
+@import "../commonStyle/card";
+
+.header-screen {
+  @include fixed-top;
+  z-index: $zIndexHeader;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1);
+  background-color: $backgroundColorBody;
+
+  .main-menu-bar {
+    position: relative;
+    @include main-menu-bar;
+
+    .left-button {
+      @include icon-header;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+
+      .icon-content {
+        @include icon-header;
+        margin-right: 5px;
+      }
+    }
+
+    .right-button {
+      width: 24px;
+    }
+  }
+}
+
+.container {
+  padding-top: 50px;
+
+  .conversation-app-page {
+    padding: 30px $paddingCommon 62px $paddingCommon;
+
+    .conversation-app-page__title {
+      font-size: $fontHeaderXXTitle;
+      line-height: 27px;
+      color: $colorHeaderActive;
+      font-weight: $fontWeightBold;
+      letter-spacing: -0.13px;
+      margin-bottom: 48px;
+    }
+
+    .box-result {
+      @include box-result;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.footer-screen {
+  @include fixed-bottom;
+  height: 62px;
+  display: flex;
+
+  .button {
+    @include button;
+  }
+}

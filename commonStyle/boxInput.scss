@@ -1,0 +1,100 @@
+@import "./styles";
+@import "./global";
+
+@mixin box-input {
+  position: relative;
+
+  .box-input__title {
+    font-size: $fontHeader;
+    line-height: 16px;
+    color: $colorBrownishGrey61;
+    font-weight: $fontWeightMedium;
+    margin-bottom: 13px;
+  }
+  .box-input__input {
+    font-size: $fontHeaderTitle;
+    line-height: 19px;
+    color: $colorInActive;
+    font-weight: $fontWeightMedium;
+    padding-bottom: 11px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid $colorInActive;
+
+    &.disabled {
+      pointer-events: none;
+    }
+    &::placeholder {
+      color: $colorInActive;
+    }
+    &:focus {
+      border-bottom: 1px solid $colorActive;
+      color: $colorInfoDetail;
+      transition: border-bottom-color 0.6s ease-out;
+      transition: color 0.2s ease-out;
+    }
+  }
+
+  .box-input__textarea-section {
+    font-size: $fontXHeader;
+    color: $colorInActive;
+    font-weight: $fontWeightMedium;
+    min-height: 231px;
+    border: none;
+    width: 100%;
+    resize: none;
+    word-break: break-word;
+    line-height: 19px;
+
+    &:focus {
+      color: $colorInfoDetail;
+    }
+  }
+
+  .box-input__dropdown {
+    position: absolute;
+    top: 64px;
+    max-height: 132px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: $backgroundColorBody;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1) inset;
+    list-style: none;
+  }
+
+  .box-input__icon-input {
+    position: absolute;
+    top: 33px;
+    right: 9px;
+
+    &.--right-side {
+      right: 0;
+    }
+  }
+
+  .box-input__warn {
+    margin-top: 1px;
+    line-height: 15px;
+    font-size: $fontXSmall;
+    font-weight: $fontWeightRegular;
+    color: $colorLightishPurple;
+  }
+}
+
+@mixin group-box-input {
+
+  .group-box-input__header-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 27px;
+    font-size: $fontHeaderXXTitle;
+    font-weight: $fontWeightBold;
+    color: $colorHeaderActive;
+    margin-bottom: 30px;
+  }
+
+  .box-input {
+    @include box-input;
+  }
+}

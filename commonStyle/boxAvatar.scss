@@ -1,0 +1,43 @@
+@import "./styles";
+@import "./global";
+
+@mixin box-avatar {
+  position: relative;
+  width: 87px;
+  height: 87px;
+
+  .box-avatar__user-image {
+    width: 87px;
+    height: 87px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .box-avatar__icon-pro {
+    border-radius: 21px;
+    color: $colorWhite;
+    background-color: $colorActive;
+    padding: 2px 9px 3px 9px;
+    font-size: $fontBody;
+    line-height: 18px;
+    font-weight: $fontWeightBold;
+    letter-spacing: -0.09px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .right-bottom-icon {
+    @include center-items;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%);
+  }
+}

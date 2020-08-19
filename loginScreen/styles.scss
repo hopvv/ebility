@@ -1,0 +1,62 @@
+@import "../commonStyle/styles";
+@import "../CommonStyle/global";
+@import "../CommonStyle/boxInput";
+@import "../CommonStyle/socialItem";
+
+.header-screen {
+
+}
+
+.container {
+  .login-view {
+    padding: 48px $paddingCommon 70px $paddingCommon;
+
+    .login-view__title {
+      font-size: $fontHeaderXXTitle;
+      font-weight: $fontWeightBold;
+      letter-spacing: -0.13px;
+      line-height: 27px;
+      color: $colorHeaderActive;
+      margin-bottom: 42px;
+    }
+
+    .login-view__email-box {
+      @include box-input;
+      margin-bottom: 30px;
+    }
+
+    .login-view__password {
+      @include box-input;
+      margin-bottom: 30px;
+    }
+
+    .login-view__box-social-actions {
+      padding: 4px 10px;
+      .social-item {
+        @include social-item;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.footer-screen {
+  @include fixed-bottom;
+  @include center-items;
+  height: 68px;
+  background-color: $backgroundColorBody;
+
+  .footer-item {
+    font-size: $fontBody;
+    font-weight: $fontWeightRegular;
+    letter-spacing: -0.09px;
+    line-height: 18px;
+    color: $colorLinkFooter;
+  }
+  .divider-vertical {
+    border-top: none;
+    border-right: 1px solid $colorLinkFooter;
+    margin: 0 14px 0 15px;
+    height: 14px;
+  }
+}

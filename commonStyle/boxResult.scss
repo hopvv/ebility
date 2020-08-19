@@ -1,0 +1,19 @@
+@import "./styles";
+@import "./global";
+
+@mixin box-result {
+  .box-input__title {
+    font-size: $fontHeader;
+    line-height: 16px;
+    color: $colorBrownishGrey61;
+    font-weight: $fontWeightMedium;
+    letter-spacing: -0.13px;
+    margin-bottom: 13px;
+  }
+  .box-input__result {
+    font-size: $fontHeader;
+    line-height: 16px;
+    color: $colorInfoDetail;
+    font-weight: $fontWeightMedium;
+  }
+}
