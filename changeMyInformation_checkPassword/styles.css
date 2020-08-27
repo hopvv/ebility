@@ -1055,7 +1055,7 @@ input::placeholder, textarea::placeholder {
   position: absolute;
   z-index: 1;
   top: 64px;
-  max-height: 142px;
+  max-height: 155px;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #ffffff;
