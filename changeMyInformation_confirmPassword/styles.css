@@ -1046,13 +1046,25 @@ input::placeholder, textarea::placeholder {
 }
 .container .confirm-password-view .box-input .box-input__dropdown {
   position: absolute;
+  z-index: 1;
   top: 64px;
-  max-height: 132px;
+  max-height: 142px;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #ffffff;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1) inset;
   list-style: none;
+  width: 100%;
+  border: 1px solid #eeeeee;
+}
+.container .confirm-password-view .box-input .box-input__dropdown .box-input__dropdown-option {
+  background-color: #ffffff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  padding: 0 20px;
+  justify-content: flex-end;
 }
 .container .confirm-password-view .box-input .box-input__icon-input {
   position: absolute;

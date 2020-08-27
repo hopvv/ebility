@@ -47,10 +47,15 @@
 			<input class="box-input__input" type="text" placeholder="입력" autofocus/>
 		</div>
 
-		<div class="box-input">
+		<div class="box-input" datatype="selectDropdown">
 			<div class="box-input__title">종목</div>
 			<input class="box-input__input" type="text" placeholder="입력" autofocus/>
-			<img class="box-input__icon-input --right-side" src="../assets/common/ic_sub_down_g.svg" alt="dropdown"/>
+			<img class="box-input__icon-input --toggle-dropdown-button --right-side" src="../assets/common/ic_sub_down_g.svg" alt="dropdown"/>
+			<div class="box-input__dropdown hidden">
+				<div class="box-input__dropdown-option" data-option="1">1</div>
+				<div class="box-input__dropdown-option" data-option="2">2</div>
+				<div class="box-input__dropdown-option" data-option="3">3</div>
+			</div>
 		</div>
 
 		<div class="box-input">
@@ -80,6 +85,7 @@
 
 </body>
 <script type="text/javascript" src="../js/modal.js"></script>
+<script type="text/javascript" src="../js/selectDropdown.js"></script>
 <script type="text/javascript">
 	function toggleModal() {
 		const modal = document.querySelector(".modal[datatype='modal']");

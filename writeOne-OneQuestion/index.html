@@ -37,10 +37,15 @@
 <!-- Here is our page's main content -->
 <main class="container">
 	<article class="one-one-inquiry-view">
-		<div class="box-input">
+		<div class="box-input" datatype="selectDropdown">
 			<div class="box-input__title">구분</div>
-			<input class="box-input__input" type="text" placeholder="질문유형" autofocus/>
-			<img class="box-input__icon-input" src="../assets/common/ic_sub_down_g.svg" alt="expand"/>
+			<input class="box-input__input" type="text" placeholder="질문유형" autofocus disabled/>
+			<img class="box-input__icon-input --toggle-dropdown-button" src="../assets/common/ic_sub_down_g.svg" alt="expand"/>
+			<div class="box-input__dropdown hidden">
+				<div class="box-input__dropdown-option" data-option="1">1</div>
+				<div class="box-input__dropdown-option" data-option="2">2</div>
+				<div class="box-input__dropdown-option" data-option="3">3</div>
+			</div>
 		</div>
 		<div class="box-input">
 			<div class="box-input__title">제목</div>
@@ -61,4 +66,5 @@
 </footer>
 
 </body>
+<script type="text/javascript" src="../js/selectDropdown.js"></script>
 </html>
