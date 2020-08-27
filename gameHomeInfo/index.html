@@ -14,8 +14,9 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 				rel="stylesheet">
-	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="../commonStyle/global.css">
 	<link rel="stylesheet" href="../commonStyle/animation.css">
+	<link rel="stylesheet" href="./styles.css">
 
 </head>
 <body>
@@ -96,9 +97,11 @@
 		</table>
 		<table class="game-info__table game-info__requirement">
 			<tbody>
-				<tr>
-					<th>최소사양</th>
-					<td>
+				<tr class="box-dropdown" datatype="boxDropdown">
+					<th>최소사양
+								<img class="box-dropdown__toggle-button" src="../assets/common/ic_sub_down_g.svg"/>
+					</th>
+					<td class="box-dropdown-short-content short-tow-line">
 						OS : Windows XP SP3 이상, Windows Vista, Windows 7, Windows 8 또는 Windows 10 정품 <br/>
 						CPU : CPU 2.0+GHz (SSE2이상의 명령어가 지원되는)<br/>
 						램 : 1GB (Windows Vista 또는 7 이용시 2GB)<br/>
@@ -106,9 +109,9 @@
 						그래픽 : Shader 버전 2.0을 지원하는 그래픽 카드, DirectX 9.0을 지원하는 그래픽 카드
 					</td>
 				</tr>
-				<tr>
-					<th>권장사양</th>
-					<td>
+				<tr  class="box-dropdown" datatype="boxDropdown">
+					<th>권장사양 <img class="box-dropdown__toggle-button" src="../assets/common/ic_sub_down_g.svg"/></th>
+					<td class="box-dropdown-short-content short-tow-line">
 						OS : Windows XP SP3 이상, Windows Vista, Windows 7, Windows 8 또는 Windows 10 정품<br/>
 						CPU : CPU 3GHz<br/>
 						램 : 4GB<br/>
@@ -153,6 +156,7 @@
 </footer>
 
 </body>
+<script type="text/javascript" src="../js/boxDropdown.js"></script>
 <script language="javascript">
 	function navigateToPage(url) {
 		window.open(url, '_self');

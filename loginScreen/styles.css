@@ -29,6 +29,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -86,6 +90,15 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -119,6 +132,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -176,6 +193,15 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -209,6 +235,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -266,6 +296,118 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+input[type=file] {
+  display: none;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input, textarea {
+  border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 .container .login-view {
@@ -312,6 +454,9 @@ input::placeholder, textarea::placeholder {
   transition: border-bottom-color 0.6s ease-out;
   transition: color 0.2s ease-out;
 }
+.container .login-view .login-view__email-box .box-input__input:focus::placeholder {
+  color: transparent;
+}
 .container .login-view .login-view__email-box .box-input__textarea-section {
   font-size: 14px;
   color: #bdbdbd;
@@ -353,7 +498,7 @@ input::placeholder, textarea::placeholder {
 }
 .container .login-view .login-view__password {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 }
 .container .login-view .login-view__password .box-input__title {
   font-size: 13px;
@@ -383,6 +528,9 @@ input::placeholder, textarea::placeholder {
   color: #424242;
   transition: border-bottom-color 0.6s ease-out;
   transition: color 0.2s ease-out;
+}
+.container .login-view .login-view__password .box-input__input:focus::placeholder {
+  color: transparent;
 }
 .container .login-view .login-view__password .box-input__textarea-section {
   font-size: 14px;
@@ -423,6 +571,22 @@ input::placeholder, textarea::placeholder {
   font-weight: 400;
   color: #c158dc;
 }
+.container .login-view .login-view__box-login-actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container .login-view .login-view__box-login-actions .check-box {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  color: #616161;
+  margin-right: 33px;
+}
+.container .login-view .login-view__box-login-actions .check-box > img {
+  margin-right: 5px;
+}
 .container .login-view .login-view__box-social-actions {
   padding: 4px 10px;
 }
@@ -461,9 +625,7 @@ input::placeholder, textarea::placeholder {
   left: 0;
   right: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 68px;
+  height: 60px;
   background-color: #ffffff;
 }
 .footer-screen .footer-item {
@@ -478,6 +640,47 @@ input::placeholder, textarea::placeholder {
   border-right: 1px solid #9b9b9b;
   margin: 0 14px 0 15px;
   height: 14px;
+}
+.footer-screen .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  color: #424242;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  padding: 9px 15px 10px;
+}
+.footer-screen .button.small-button {
+  font-size: 10px;
+  padding: 7px 15px 8px;
+}
+.footer-screen .button.active {
+  background-color: #3c5afe;
+  font-weight: 700;
+  color: #ffffff;
+}
+.footer-screen .button.button-full-width {
+  width: 100%;
+}
+.footer-screen .button.no-radius {
+  border-radius: 0;
+}
+.footer-screen .button.large-button {
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  line-height: 20px;
+  padding: 11px 33px;
+  font-weight: 500;
+}
+.footer-screen .button.large-title-button {
+  font-size: 16px;
+  letter-spacing: -0.11px;
+  line-height: 24px;
+  padding: 11px 33px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=styles.css.map */

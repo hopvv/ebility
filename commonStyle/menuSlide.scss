@@ -90,16 +90,18 @@
       flex: 1;
       .menu {
         .menu-item {
-          height: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding-left: 20px;
-          padding-right: 22px;
-          cursor: pointer;
-          font-size: $fontXXHeader;
-          line-height: $fontXTitle;
-          color: $colorBlack85;
+          .menu-item-content {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 22px;
+            cursor: pointer;
+            font-size: $fontXXHeader;
+            line-height: $fontXTitle;
+            color: $colorBlack85;
+          }
 
           &.menu-sub-item {
             padding-left: 36px;

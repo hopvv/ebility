@@ -13,19 +13,20 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 				rel="stylesheet">
-	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="../commonStyle/global.css">
 	<link rel="stylesheet" href="../commonStyle/animation.css">
+	<link rel="stylesheet" href="./styles.css">
 
 </head>
 <body>
 <!--   Top header   -->
 <header class="header-screen">
 	<div class="main-menu-bar" role="menubar">
-				<button class="left-button">
+		<button class="left-button">
 			<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button__image" id="buttonMenu"/>
 		</button>
 		<div class="header-content left-content">
-			User 회원가입
+			Pro 회원가입
 		</div>
 	</div>
 </header>
@@ -33,39 +34,43 @@
 <!-- Here is our page's main content -->
 <main class="container">
 	<article class="user-input-view">
-		<div class="box-input">
+		<div class="box-input" datatype='boxPassword'>
 			<div class="box-input__title">비밀번호</div>
-			<input class="box-input__input" type="text" value="홍길동" autofocus/>
-			<img class="box-input__icon-input" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<input class="box-input__input" type="text" placeholder="입력" value="홍길동" autofocus/>
+			<img class="box-input__icon-input --icon-show hidden" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<img class="box-input__icon-input --icon-hide" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
 			<div class="box-input__warn">영문, 숫자조합 8자리 이상 입력해주세요.</div>
 		</div>
-		<div class="box-input">
+		<div class="box-input" datatype='boxPassword'>
 			<div class="box-input__title">비밀번호</div>
-			<input class="box-input__input" type="text" value="홍길동"/>
-			<img class="box-input__icon-input" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
+			<input class="box-input__input" type="text" placeholder="입력" value="홍길동"/>
+			<img class="box-input__icon-input --icon-show hidden" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<img class="box-input__icon-input --icon-hide" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
 			<div class="box-input__warn">비밀번호가 일치하지 않습니다.</div>
 
 		</div>
 		<div class="box-input">
 			<div class="box-input__title">생일</div>
-			<input class="box-input__input" type="text" value="입력"/>
+			<input class="box-input__input" type="text" placeholder="입력" value=""/>
 		</div>
 		<div class="box-input">
 			<div class="box-input__title">연락처</div>
-			<input class="box-input__input" type="password" value="입력"/>
+			<input class="box-input__input" type="password" placeholder="입력" value=""/>
 		</div>
-		<div class="box-input">
+		<div class="box-input" datatype="selectDropdown">
 			<div class="box-input__title">종목</div>
-			<input class="box-input__input" type="text" value="입력"/>
+			<input class="box-input__input" type="text" placeholder="입력" value=""/>
 			<img class="box-input__icon-input --right-side" src="../assets/common/ic_sub_down_g.svg" alt="expand"/>
 		</div>
 		<div class="box-input">
 			<div class="box-input__title">닉네임</div>
-			<input class="box-input__input" type="text" value="입력"/>
+			<input class="box-input__input" type="text" placeholder="입력" value=""/>
 		</div>
 
-		<div class="agree-condition-box">
-			<img src="../assets/common/ic_circle-tick.svg" class="agree-condition-box__icon-tick"/>
+		<div class="check-box agree-condition-box selected" datatype='checkBox'>
+			<img class="agree-condition-box__icon-tick --check-box__tick" alt="tick" src="../assets/common/ic_circle-tick.svg"/>
+			<img class="agree-condition-box__icon-tick --check-box__un-tick hidden" alt="un-tick" src="../assets/common/ic_circle-untick.svg"/>
+
 			<div class="agree-condition-box__texts">
 				<a class="agree-condition-box__text --term-of-use" href="#">이용약관</a>
 				<span class="agree-condition-box__text">및</span>
@@ -79,12 +84,13 @@
 <!-- And here is our main footer that is used across all the pages of our website -->
 
 <footer class="footer-screen">
-	<div class="button button-full-width no-radius active">
+	<button class="button button-full-width no-radius large-title-button active">
 		가입하기
-	</div>
+	</button>
 </footer>
 
-
+<script type="text/javascript" src="../js/boxPassword.js"></script>
+<script type="text/javascript" src="../js/checkBox.js"></script>
 <script language="JavaScript">
 	function navigateToPage(url) {
 		window.open(url, '_self');

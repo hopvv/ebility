@@ -10,9 +10,9 @@
     <meta name="format-detection" content="telephone=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="../commonStyle/animation.css">
-
+		<link rel="stylesheet" href="../commonStyle/global.css">
+		<link rel="stylesheet" href="../commonStyle/animation.css">
+		<link rel="stylesheet" href="./styles.css">
   </head>
   <body>
   <!--   Top header   -->
@@ -44,11 +44,11 @@
 
       <!--   Sub menu   -->
       <ul class="tabs-menu" role="menubar">
-        <li class="tab active" role="listitem">선수</li>
-        <li class="tab" role="listitem">랭킹</li>
-        <li class="tab" role="listitem">통계</li>
-        <li class="tab" role="listitem">커뮤니티</li>
-        <li class="tab" role="listitem">게임소개</li>
+				<li class="tab active" role="listitem" onclick="navigateToPage('../gameDetails_playerList/index.html')">선수</li>
+				<li class="tab" role="listitem" onclick="navigateToPage('../gameHomeRanking/index.html')">랭킹</li>
+				<li class="tab" role="listitem" onclick="navigateToPage('../gameHomeStats/index.html')">통계</li>
+				<li class="tab" role="listitem" onclick="navigateToPage('../gameHomeCommunity/index.html')">커뮤니티</li>
+				<li class="tab" role="listitem" onclick="navigateToPage('../gameHomeInfo/index.html')">게임소개</li>
       </ul>
     </header>
 
@@ -57,7 +57,7 @@
 
       <!--  Search bar    -->
       <div class="search-bar" role="search">
-        <input placeholder="홍길동" value="홍길동" class="search-input"/>
+        <input placeholder="제목 또는 내용으로 검색하세요." value="홍길동" class="search-input"/>
         <img alt="search" src="../assets/ic_search_bk.svg" class="icon-search"/>
       </div>
 
@@ -202,6 +202,9 @@
 
   </body>
 	<script language="javascript">
+		function navigateToPage(url) {
+			window.open(url, '_self');
+		}
 		window.onload = function () {
 			const buttonDropdown = document.getElementById("buttonDropdown");
 			if (buttonDropdown) {

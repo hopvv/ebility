@@ -3,13 +3,14 @@
 
 @mixin counter-button {
   @include center-items;
-  font-size: $fontXXSmall;
+  font-size: $fontBody;
   font-weight: $fontWeightRegular;
-  letter-spacing: -0.08px;
-  line-height: 17px;
+  letter-spacing: -0.09px;
+  line-height: 18px;
 
   .counter-button__icon {
-    margin-right: 5px;
+    margin-right: 6px;
+    height: 15px;
   }
 
   &.like {

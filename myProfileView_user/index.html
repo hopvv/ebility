@@ -13,8 +13,9 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 				rel="stylesheet">
-	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="../commonStyle/global.css">
 	<link rel="stylesheet" href="../commonStyle/animation.css">
+	<link rel="stylesheet" href="./styles.css">
 
 </head>
 <body>
@@ -27,7 +28,9 @@
 		<div class="header-content left-content">
 			내 프로필 관리
 		</div>
-		<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button" id="buttonClose"/>
+		<button class="right-button">
+			<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button__image" id="buttonClose"/>
+		</button>
 	</div>
 </header>
 
@@ -37,7 +40,10 @@
 
 		<div class="box-avatar">
 			<img alt="user" src="../assets/profile/ic_profile.png" class="box-avatar__user-image"/>
-			<img alt="edit" src="../assets/profile/btn_profile_edit.svg" class="right-bottom-icon"/>
+			<button class="button-image" datatype="buttonImage">
+				<input type="file" accept="image/*" class="input-image"/>
+				<img alt="edit" src="../assets/profile/btn_profile_edit.svg" class="right-bottom-icon"/>
+			</button>
 		</div>
 
 		<div class="my-profile-view__email">myid@email.com</div>
@@ -52,10 +58,11 @@
 
 <!-- And here is our main footer that is used across all the pages of our website -->
 <footer class="footer-screen">
-	<div class="button">
+	<button class="button">
 		myid@email.com
-	</div>
+	</button>
 </footer>
 
 </body>
+<script type="text/javascript" src="../js/buttonImage.js"></script>
 </html>

@@ -13,8 +13,9 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 				rel="stylesheet">
-	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="../commonStyle/global.css">
 	<link rel="stylesheet" href="../commonStyle/animation.css">
+	<link rel="stylesheet" href="./styles.css">
 
 </head>
 <body>
@@ -43,21 +44,23 @@
 		</div>
 
 		<div class="reset-password-view__result-button">
-			<div class="button ">인증완료</div>
+			<button class="button">인증완료</button>
 		</div>
 
 		<div class="reset-password-view__title">신규로 사용할 비밀번호를 입력하세요.</div>
 
-		<div class="box-input">
+		<div class="box-input" datatype="boxPassword">
 			<div class="box-input__title">비밀번호</div>
-			<input class="box-input__input" type="text" value="홍길동" autofocus/>
-			<img class="box-input__icon-input" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<input class="box-input__input" type="text" placeholder="암호" value="홍길동" autofocus/>
+			<img class="box-input__icon-input --icon-show" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<img class="box-input__icon-input --icon-hide hidden" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
 			<div class="box-input__warn">영문, 숫자조합 8자리 이상 입력해주세요.</div>
 		</div>
-		<div class="box-input">
+		<div class="box-input" datatype="boxPassword">
 			<div class="box-input__title">비밀번호</div>
-			<input class="box-input__input" type="text" value="홍길동" autofocus/>
-			<img class="box-input__icon-input" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<input class="box-input__input" type="text" placeholder="암호" value="홍길동" autofocus/>
+			<img class="box-input__icon-input --icon-show" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<img class="box-input__icon-input --icon-hide hidden" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
 			<div class="box-input__warn">비밀번호가 일치하지 않습니다.</div>
 		</div>
 	</article>
@@ -65,10 +68,11 @@
 
 <!-- And here is our main footer that is used across all the pages of our website -->
 <footer class="footer-screen">
-	<div class="button button-full-width no-radius active">
+	<button class="button button-full-width no-radius large-title-button active">
 		다음
-	</div>
+	</button>
 </footer>
 
 </body>
+<script type="text/javascript" src="../js/boxPassword.js"></script>
 </html>

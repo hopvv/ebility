@@ -2,6 +2,7 @@
 @import "../CommonStyle/global";
 @import "../CommonStyle/boxInput";
 @import "../CommonStyle/socialItem";
+@import "../CommonStyle/checkBox";
 
 .header-screen {
 
@@ -27,7 +28,18 @@
 
     .login-view__password {
       @include box-input;
+      margin-bottom: 17px;
+    }
+
+    .login-view__box-login-actions {
+      display: flex;
+      align-items: center;
       margin-bottom: 30px;
+
+      .check-box {
+        @include check-box;
+        margin-right: 33px;
+      }
     }
 
     .login-view__box-social-actions {
@@ -42,8 +54,9 @@
 
 .footer-screen {
   @include fixed-bottom;
-  @include center-items;
-  height: 68px;
+  //@include center-items;
+  display: flex;
+  height: 60px;
   background-color: $backgroundColorBody;
 
   .footer-item {
@@ -58,5 +71,9 @@
     border-right: 1px solid $colorLinkFooter;
     margin: 0 14px 0 15px;
     height: 14px;
+  }
+
+  .button {
+    @include button;
   }
 }

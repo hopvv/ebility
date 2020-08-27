@@ -1,0 +1,14 @@
+@import "./styles";
+@import "./global";
+
+@mixin check-box {
+  display: flex;
+  align-items: center;
+  font-weight: $fontWeightMedium;
+  font-size: $fontHeader;
+  color: $colorBrownishGrey61;
+
+  > img {
+    margin-right: 5px;
+  }
+}

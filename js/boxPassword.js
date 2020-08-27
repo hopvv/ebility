@@ -1,5 +1,3 @@
-
-
 function initBoxPassword() {
 
   function setEventInput(input) {
@@ -19,7 +17,7 @@ function initBoxPassword() {
     const iconHide = box.getElementsByClassName("--icon-hide")[0];
     const input = box.querySelector(".box-input__input")
 
-    iconShow.addEventListener("click", function() {
+    iconShow.addEventListener("click", function () {
       setEventInput(input);
       if (!this.classList.contains("hidden")) {
         this.classList.add("hidden")
@@ -28,7 +26,7 @@ function initBoxPassword() {
         iconHide.classList.remove("hidden")
       }
     })
-    iconHide.addEventListener("click", function() {
+    iconHide.addEventListener("click", function () {
       setEventInput(input);
       if (!this.classList.contains("hidden")) {
         this.classList.add("hidden")

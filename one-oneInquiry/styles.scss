@@ -45,7 +45,9 @@
   padding-top: 50px;
 
   .one-one-inquiry-view {
-    padding: 30px $paddingCommon 62px $paddingCommon;
+    //padding: 30px $paddingCommon 62px $paddingCommon;
+    padding-top: 30px;
+    padding-bottom: 62px;
 
     .inquiry-box {
       @include inquiry-box;

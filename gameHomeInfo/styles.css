@@ -29,6 +29,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -86,6 +90,15 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -119,6 +132,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -176,6 +193,15 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -209,6 +235,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -266,6 +296,15 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -299,6 +338,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -356,6 +399,15 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -389,6 +441,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -446,6 +502,15 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -479,6 +544,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -536,6 +605,15 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -569,6 +647,10 @@ input[type=file] {
   display: none;
 }
 
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent !important;
+}
+
 button, input {
   padding: 0;
   margin: 0;
@@ -626,6 +708,15 @@ input::placeholder, textarea::placeholder {
 
 .hidden {
   display: none !important;
+}
+
+.short-tow-line {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 .header-screen {

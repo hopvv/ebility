@@ -29,6 +29,7 @@
 
   .game-info__table {
     @include table-info-full-border;
+    @include table-has-short-show;
     width: 100%;
   }
 

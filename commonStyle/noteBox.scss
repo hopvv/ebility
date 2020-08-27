@@ -91,6 +91,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
+    padding: 0 $paddingCommon;
 
     .inquiry-box__box-type {
       color: $colorWhite;
@@ -99,6 +100,7 @@
       text-align: center;
       letter-spacing: -0.07px;
       padding: 3px 5px 4px 5px;
+      border-radius: 2px;
     }
 
     .inquiry-box__top-title {
@@ -122,19 +124,41 @@
     color: $colorBrownishGrey;
     letter-spacing: -0.08px;
     margin-bottom: 15px;
+    padding: 0 $paddingCommon;
   }
 
   .inquiry-box__des {
-    padding-top: 8px;
-    padding-bottom: 6px;
     line-height: 20px;
     letter-spacing: -0.1px;
     font-weight: $fontWeightRegular;
     color: $colorInfoDetail;
+    padding: 8px $paddingCommon 15px;
   }
+
+  .inquiry-box__box-answer {
+    padding: 15px $paddingCommon;
+    background-color: $backgroundColorSearchBar;
+
+    .inquiry-box__title-answer {
+      line-height: 18px;
+      font-size: $fontHeader;
+      letter-spacing: -0.09px;
+      font-weight: $fontWeightBold;
+      color: $colorActive;
+    }
+    .inquiry-box__des-answer {
+      line-height: 18px;
+      font-size: $fontHeader;
+      letter-spacing: -0.09px;
+      font-weight: $fontWeightRegular;
+      color: $colorHeaderActive;
+    }
+  }
+
   .divider {
     @include divider;
-    margin: 15px 0;
+    margin-bottom: 15px;
+    margin-top: 0;
   }
 
   &.--waiting-reply {
