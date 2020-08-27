@@ -25,6 +25,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -54,10 +67,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -76,7 +85,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /*# sourceMappingURL=equipmentItem.css.map */

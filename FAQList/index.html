@@ -21,11 +21,15 @@
 <!--   Top header   -->
 <header class="header-screen">
 	<div class="main-menu-bar no-left" role="menubar">
-		<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button hidden" id="buttonBack"/>
+		<button class="left-button">
+			<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button__image hidden" id="buttonBack"/>
+		</button>
 		<div class="header-content left-content">
 			자주하는 질문
 		</div>
-		<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button" id="buttonClose"/>
+		<button class="right-button">
+			<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button__image" id="buttonClose"/>
+		</button>
 	</div>
 </header>
 
@@ -38,73 +42,81 @@
 	</div>
 	<article class="FAQ-list">
 		<div class="FAQ-list__actions">
-			<div class="button active">전체보기</div>
+			<div class="button small-button active">전체보기</div>
 		</div>
 
-		<div class="FAQ-box">
+		<div class="FAQ-box box-dropdown" datatype="boxDropdown">
 			<div class="FAQ-box__top-header">
 				<div class="FAQ-box__top-title">
 					Q. 관리자에 등록한 질문
 				</div>
-				<img class="FAQ-box__top-right-icon" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
+				<img class="FAQ-box__top-right-icon box-dropdown__toggle-button" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
 			</div>
 
-			<div class="FAQ-box__des hidden">
-
-			</div>
-			<div class="divider"></div>
-		</div>
-		<div class="FAQ-box">
-			<div class="FAQ-box__top-header">
-				<div class="FAQ-box__top-title">
-					Q. 관리자에 등록한 질문
-				</div>
-				<img class="FAQ-box__top-right-icon" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
-			</div>
-
-			<div class="FAQ-box__des hidden">
-
-			</div>
-			<div class="divider"></div>
-		</div>
-		<div class="FAQ-box">
-			<div class="FAQ-box__top-header">
-				<div class="FAQ-box__top-title">
-					Q. 관리자에 등록한 질문
-				</div>
-				<img class="FAQ-box__top-right-icon" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
-			</div>
-
-			<div class="FAQ-box__des hidden">
-
-			</div>
-			<div class="divider"></div>
-		</div>
-		<div class="FAQ-box">
-			<div class="FAQ-box__top-header">
-				<div class="FAQ-box__top-title">
-					A. 관리자에 등록한 답변
-				</div>
-				<img class="FAQ-box__top-right-icon rotate-180" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
-			</div>
-
-			<div class="FAQ-box__des">
+			<div class="FAQ-box__des box-dropdown-content hidden">
 				질문에 대한 답변내용
 				동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산
 				대한 사람 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세
 			</div>
 			<div class="divider"></div>
 		</div>
-		<div class="FAQ-box">
+		<div class="FAQ-box box-dropdown" datatype="boxDropdown">
 			<div class="FAQ-box__top-header">
 				<div class="FAQ-box__top-title">
 					Q. 관리자에 등록한 질문
 				</div>
-				<img class="FAQ-box__top-right-icon" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
+				<img class="FAQ-box__top-right-icon box-dropdown__toggle-button" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
 			</div>
 
-			<div class="FAQ-box__des hidden">
+			<div class="FAQ-box__des box-dropdown-content hidden">
+				질문에 대한 답변내용
+				동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산
+				대한 사람 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세
+			</div>
+			<div class="divider"></div>
+		</div>
+		<div class="FAQ-box box-dropdown" datatype="boxDropdown">
+			<div class="FAQ-box__top-header">
+				<div class="FAQ-box__top-title">
+					Q. 관리자에 등록한 질문
+				</div>
+				<img class="FAQ-box__top-right-icon box-dropdown__toggle-button" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
+			</div>
 
+			<div class="FAQ-box__des box-dropdown-content hidden">
+				질문에 대한 답변내용
+				동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산
+				대한 사람 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세
+			</div>
+			<div class="divider"></div>
+		</div>
+		<div class="FAQ-box box-dropdown" datatype="boxDropdown">
+			<div class="FAQ-box__top-header">
+				<div class="FAQ-box__top-title">
+					A. 관리자에 등록한 답변
+				</div>
+				<img class="FAQ-box__top-right-icon box-dropdown__toggle-button rotate-180" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
+			</div>
+
+			<div class="FAQ-box__des box-dropdown-content">
+				질문에 대한 답변내용
+				동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산
+				대한 사람 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세
+			</div>
+			<div class="divider"></div>
+		</div>
+		<div class="FAQ-box box-dropdown" datatype="boxDropdown">
+			<div class="FAQ-box__top-header">
+				<div class="FAQ-box__top-title">
+					Q. 관리자에 등록한 질문
+				</div>
+				<img class="FAQ-box__top-right-icon box-dropdown__toggle-button" alt="expand-collapse" src="../assets/common/ic_page_down.svg"/>
+			</div>
+
+			<div class="FAQ-box__des box-dropdown-content hidden">
+				질문에 대한 답변내용
+				동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산
+				대한 사람 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세
 			</div>
 			<div class="divider"></div>
 		</div>
@@ -125,4 +137,5 @@
 </footer>
 
 </body>
+<script type="text/javascript" src="../js/boxDropdown.js"></script>
 </html>

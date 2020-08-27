@@ -21,11 +21,15 @@
 <!--   Top header   -->
 <header class="header-screen">
 	<div class="main-menu-bar no-left" role="menubar">
-		<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button hidden" id="buttonBack"/>
+		<button class="left-button">
+			<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button__image hidden" id="buttonBack"/>
+		</button>
 		<div class="header-content left-content">
 			정보변경
 		</div>
-		<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button" id="buttonClose"/>
+		<button class="right-button">
+			<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button__image" id="buttonClose"/>
+		</button>
 	</div>
 </header>
 
@@ -48,26 +52,29 @@
 			<input class="box-input__input" type="text" value="010-1234-1234" autofocus/>
 		</div>
 
-		<div class="box-input">
+		<div class="box-input" datatype="boxPassword">
 			<div class="box-input__title">비밀번호</div>
 			<input class="box-input__input" type="text" value="bettterworks14!$" autofocus/>
-			<img class="box-input__icon-input" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
+			<img class="box-input__icon-input --icon-show" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<img class="box-input__icon-input --icon-hide hidden" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
 		</div>
 
-		<div class="box-input">
+		<div class="box-input" datatype="boxPassword">
 			<div class="box-input__title">비밀번호 확인</div>
 			<input class="box-input__input" type="text" value="bettterworks14!$" autofocus/>
-			<img class="box-input__icon-input" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
+			<img class="box-input__icon-input --icon-show" src="../assets/common/ic_eye.svg" alt="show password"/>
+			<img class="box-input__icon-input --icon-hide hidden" src="../assets/common/ic_un-eye.svg" alt="hide password"/>
 		</div>
 	</article>
 </main>
 
 <!-- And here is our main footer that is used across all the pages of our website -->
 <footer class="footer-screen">
-	<div class="button button-full-width no-radius active">
+	<button class="button button-full-width no-radius large-title-button active">
 		수정완료
-	</div>
+	</button>
 </footer>
 
 </body>
+<script type="text/javascript" src="../js/boxPassword.js"></script>
 </html>

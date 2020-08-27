@@ -33,6 +33,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type='file'] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -59,10 +72,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: $fontHeader;
@@ -82,7 +91,7 @@ input, textarea {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 @mixin center-items {
@@ -162,6 +171,7 @@ input, textarea {
   padding: 9px 15px 10px;
 
   &.small-button {
+    font-size: $fontXSmall;
     padding: 7px 15px 8px;
   }
 
@@ -183,6 +193,14 @@ input, textarea {
     font-size: $fontXHeader;
     letter-spacing: -0.1px;
     line-height: 20px;
+    padding: 11px 33px;
+    font-weight: $fontWeightMedium;
+  }
+
+  &.large-title-button {
+    font-size: $fontHeaderTitle;
+    letter-spacing: -0.11px;
+    line-height: 24px;
     padding: 11px 33px;
     font-weight: $fontWeightMedium;
   }

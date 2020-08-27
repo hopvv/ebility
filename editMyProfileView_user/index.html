@@ -21,11 +21,15 @@
 <!--   Top header   -->
 <header class="header-screen">
 	<div class="main-menu-bar" role="menubar">
-		<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button" id="buttonBack"/>
+		<button class="left-button">
+			<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button__image" id="buttonBack"/>
+		</button>
 		<div class="header-content left-content">
 			내 프로필 관리
 		</div>
-		<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button" id="buttonClose"/>
+		<button class="right-button">
+			<img alt="right-menu" src="../assets/menu/ic_regist.svg" class="right-button__image" id="buttonClose"/>
+		</button>
 	</div>
 </header>
 
@@ -35,7 +39,11 @@
 
 		<div class="box-avatar">
 			<img alt="user" src="../assets/profile/ic_profile.png" class="box-avatar__user-image"/>
-			<img alt="edit" src="../assets/profile/btn_camera.svg" class="right-bottom-icon"/>
+
+			<button class="button-image" datatype="buttonImage">
+				<img alt="edit" src="../assets/profile/btn_camera.svg" class="right-bottom-icon"/>
+				<input type="file" accept="image/*" class="input-image"/>
+			</button>
 		</div>
 
 		<div class="box-input">
@@ -45,22 +53,22 @@
 <!--			<div class="box-input__warn">영문, 숫자조합 8자리 이상 입력해주세요.</div>-->
 		</div>
 
-		<div class="my-profile-view__email">myid@email.com</div>
+<!--		<div class="my-profile-view__email">myid@email.com</div>-->
 
 		<div class="social-buttons">
 			<div class="social-item">
 				<img class="social-item__left-content" alt="kakao" src="../assets/profile/group_6.png"/>
-				<div class="social-item__content">주소</div>
+				<input class="social-item__content" value="주소" />
 <!--				<img class="social-item__right-content" alt="arrow" src="../assets/login/ic_fwd_small_b.svg"/>-->
 			</div>
 			<div class="social-item">
 				<img class="social-item__left-content" alt="youtube" src="../assets/profile/group_5.png"/>
-				<div class="social-item__content">주소</div>
+				<input class="social-item__content" value="주소" />
 <!--				<img class="social-item__right-content" alt="arrow" src="../assets/login/ic_fwd_small_b.svg"/>-->
 			</div>
 			<div class="social-item">
 				<img class="social-item__left-content" alt="twitch" src="../assets/profile/group_4.png"/>
-				<div class="social-item__content">주소</div>
+				<input class="social-item__content" value="주소" />
 <!--				<img class="social-item__right-content" alt="arrow" src="../assets/login/ic_fwd_small_b.svg"/>-->
 			</div>
 		</div>
@@ -75,4 +83,5 @@
 </footer>
 
 </body>
+<script type="text/javascript" src="../js/buttonImage.js"></script>
 </html>

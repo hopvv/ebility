@@ -7,8 +7,13 @@
   align-items: center;
 
   .left-button {
-    padding: 8px $paddingCommon;
-    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    padding: 0;
+    .left-button__image {
+      padding: 8px 10px 8px $paddingCommon;
+      cursor: pointer;
+    }
   }
 
   .header-content {
@@ -23,12 +28,26 @@
   }
 
   .right-button {
-    padding: 8px $paddingCommon;
-    cursor: pointer;
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    .right-button__image {
+      padding: 8px $paddingCommon;
+      cursor: pointer;
+    }
   }
 
   &.no-left {
     padding-left: $paddingCommon;
+    .left-button {
+      display: none;
+    }
+  }
+
+  &.no-right {
+    .right-button {
+      display: none;
+    }
   }
 }
 

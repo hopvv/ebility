@@ -37,9 +37,7 @@
       }
     }
 
-    .right-button {
-      width: 24px;
-    }
+
   }
 }
 
@@ -60,9 +58,9 @@
       border-bottom: 1px solid $colorVeryLightPinkThree;
       .button {
         @include button;
-        line-height: 12px;
-        padding: 9.5px 15px 11.5px 15px;
-        border-radius: 16.5px;
+        //line-height: 12px;
+        //padding: 9.5px 15px 11.5px 15px;
+        //border-radius: 16.5px;
       }
     }
 

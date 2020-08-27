@@ -34,7 +34,9 @@
     }
 
     .right-button {
-      width: 24px;
+      .right-button__image {
+        width: 24px;
+      }
     }
   }
 }

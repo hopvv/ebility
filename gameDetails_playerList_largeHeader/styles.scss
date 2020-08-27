@@ -27,9 +27,7 @@
       }
     }
 
-    .right-button {
-      width: 24px;
-    }
+
 
     .list-item-dropdown {
       position: absolute;
@@ -65,13 +63,13 @@
       .left-button {
         position: absolute;
         z-index: 1;
-        left: 20px;
+        left: 0;
         top: 13px;
       }
       .right-button {
         position: absolute;
         z-index: 1;
-        right: 20px;
+        right: 0;
         top: 10px;
       }
       .header-content {

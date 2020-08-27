@@ -25,6 +25,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -54,10 +67,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -76,7 +85,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -106,6 +115,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -135,10 +157,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -157,7 +175,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -187,6 +205,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -216,10 +247,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -238,7 +265,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -268,6 +295,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -297,10 +337,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -319,7 +355,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -349,6 +385,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -378,10 +427,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -400,7 +445,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .header-screen {
@@ -420,7 +465,12 @@ input::placeholder, textarea::placeholder {
   justify-content: space-between;
 }
 .header-screen .main-menu-bar .left-button {
-  padding: 8px 20px;
+  background-color: transparent;
+  display: flex;
+  padding: 0;
+}
+.header-screen .main-menu-bar .left-button .left-button__image {
+  padding: 8px 10px 8px 20px;
   cursor: pointer;
 }
 .header-screen .main-menu-bar .header-content {
@@ -433,11 +483,22 @@ input::placeholder, textarea::placeholder {
   flex: 1;
 }
 .header-screen .main-menu-bar .right-button {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+}
+.header-screen .main-menu-bar .right-button .right-button__image {
   padding: 8px 20px;
   cursor: pointer;
 }
 .header-screen .main-menu-bar.no-left {
   padding-left: 20px;
+}
+.header-screen .main-menu-bar.no-left .left-button {
+  display: none;
+}
+.header-screen .main-menu-bar.no-right .right-button {
+  display: none;
 }
 .header-screen .main-menu-bar .header-content {
   display: flex;
@@ -445,9 +506,6 @@ input::placeholder, textarea::placeholder {
 }
 .header-screen .main-menu-bar .header-content .icon-content {
   margin-right: 5px;
-}
-.header-screen .main-menu-bar .right-button {
-  width: 24px;
 }
 .header-screen .main-menu-bar .list-item-dropdown {
   position: absolute;
@@ -643,6 +701,7 @@ input::placeholder, textarea::placeholder {
   margin: 0 auto;
 }
 .footer-screen .button.small-button {
+  font-size: 10px;
   padding: 7px 15px 8px;
 }
 .footer-screen .button.active {
@@ -660,6 +719,13 @@ input::placeholder, textarea::placeholder {
   font-size: 14px;
   letter-spacing: -0.1px;
   line-height: 20px;
+  padding: 11px 33px;
+  font-weight: 500;
+}
+.footer-screen .button.large-title-button {
+  font-size: 16px;
+  letter-spacing: -0.11px;
+  line-height: 24px;
   padding: 11px 33px;
   font-weight: 500;
 }

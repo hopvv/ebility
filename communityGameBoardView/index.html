@@ -20,11 +20,16 @@
 <body>
 <!--   Top header   -->
 <header class="header-screen">
-	<div class="main-menu-bar" role="menubar">
-		<img alt="left-menu" src="../assets/menu/ic_regist.svg" class="left-button" id="buttonMenu"/>
+	<div class="main-menu-bar no-right" role="menubar">
+		<button class="left-button">
+			<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button__image" id="buttonMenu"/>
+		</button>
 		<div class="header-content left-content">
+			입력한 검색어
 		</div>
-		<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button rotate-180" id="buttonDropdown"/>
+		<button class="right-button">
+			<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button__image rotate-180" id="buttonDropdown"/>
+		</button>
 	</div>
 </header>
 
@@ -36,40 +41,47 @@
 
 		<div class="divider"></div>
 
-		<div class="community-detail-view__post-owner">
-			<img class="community-detail-view__image-owner" alt="user" src="../assets/lol/bang.png"/>
-			<div class="community-detail-view__owner">
-				<div class="community-detail-view__owner-name">게임의 게도 모르는 자</div>
-				<div class="community-detail-view__post-detail">
-					<div class="community-detail-view__post-detail-item">2020.07.24</div>
-					<div class="community-detail-view__post-detail-item">11:25</div>
-					<div class="community-detail-view__post-detail-item">조회 6</div>
+		<div class="box-dropdown" datatype="boxDropdown">
+			<div class="community-detail-view__post-owner">
+				<img class="community-detail-view__image-owner" alt="user" src="../assets/lol/bang.png"/>
+				<div class="community-detail-view__owner">
+					<div class="community-detail-view__owner-name">게임의 게도 모르는 자</div>
+					<div class="community-detail-view__post-detail">
+						<div class="community-detail-view__post-detail-item">2020.07.24</div>
+						<div class="community-detail-view__post-detail-item">11:25</div>
+						<div class="community-detail-view__post-detail-item">조회 6</div>
+					</div>
+				</div>
+				<div class="community-detail-view__post-actions">
+					<img src="../assets/community/ic_edit.svg" alt="edit" class="community-detail-view__action --edit"/>
+					<img src="../assets/community/ic_delete_p.svg" alt="delete" class="community-detail-view__action --delete"/>
+<!--					<img-->
+<!--						src="../assets/common/ic_sub_down_g.svg"-->
+<!--						alt="delete"-->
+<!--						class="community-detail-view__action box-dropdown__toggle-button rotate-180 &#45;&#45;expand"-->
+<!--					/>-->
 				</div>
 			</div>
-			<div class="community-detail-view__post-actions">
-				<img src="../assets/community/ic_edit.svg" alt="edit" class="community-detail-view__action --edit"/>
-				<img src="../assets/community/ic_delete_p.svg" alt="delete" class="community-detail-view__action --delete"/>
+
+			<div class="divider box-dropdown-content-divider"></div>
+
+			<div class="community-detail-view__post-des box-dropdown-content">
+				동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산
+				대한 사람 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세
+				무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세 무궁화 삼천리 화려 강산
+				대한 사람 대한으로 길이 보전하세
 			</div>
-		</div>
-
-		<div class="divider"></div>
-
-		<div class="community-detail-view__post-des">
-			동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른 듯 바람 서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산
-			대한 사람 대한으로 길이 보전하세 가을 하늘 공활한데 높고 구름 없이 밝은 달은 우리 가슴 일편단심일세
-			무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 이 기상과 이 맘으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하세 무궁화 삼천리 화려 강산
-			대한 사람 대한으로 길이 보전하세
 		</div>
 
 		<div class="divider"></div>
 
 		<div class="community-detail-view__comment-wrapper replies-box">
-			<div class="replies-box__total-count-comment">
+			<div class="replies-box__total-count-comment" onclick="navigateToPage('../communityCommentDetails/index.html')">
 				댓글 39
 				<img alt="view" src="../assets/community/arrow-point-to-right.svg" class="replies-box__total-count-icon"/>
 			</div>
 			<div class="replies-box__list-replies">
-				<div class="replies-box__reply reply-item">
+				<div datatype='replyItem' class="replies-box__reply reply-item">
 					<div class="reply-item__top">
 						<div class="reply-item__left-content">
 							<div class="reply-item__top-detail">
@@ -84,7 +96,8 @@
 							</div>
 						</div>
 						<div class="reply-item__right-content">
-							<img src="../assets/community/ic_warn_g.svg" alt="warn" class="reply-item__action"/>
+							<img src="../assets/community/ic_warn_g.svg" alt="warn" class="reply-item__action --icon-gray"/>
+							<img src="../assets/community/ic_warn_red.svg" alt="warn" class="reply-item__action --icon-red hidden"/>
 						</div>
 					</div>
 				</div>
@@ -97,13 +110,14 @@
 <!-- And here is our main footer that is used across all the pages of our website -->
 
 <footer class="footer-screen">
-	<div class="tabs no-border">
-		<div class="tab active">마이닉네임</div>
-		<div class="tab">댓글을 남겨보세요.</div>
+	<div class="big-input-box">
+		<div class="big-input-box__label">마이닉네임</div>
+		<input class="big-input-box__input" value="댓글을 남겨보세요." placeholder="댓글을 남겨보세요." type="text"/>
 	</div>
-
 </footer>
 
+<script type="text/javascript" src="../js/replyItem.js"></script>
+<script type="text/javascript" src="../js/boxDropdown.js"></script>
 
 <script language="JavaScript">
 	function navigateToPage(url) {

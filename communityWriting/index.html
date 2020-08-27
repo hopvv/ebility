@@ -21,20 +21,23 @@
 <!--   Top header   -->
 <header class="header-screen">
 	<div class="main-menu-bar" role="menubar">
-		<img alt="left-menu" src="../assets/menu/ic_regist.svg" class="left-button" id="buttonMenu"/>
+		<button class="left-button">
+			<img alt="left-menu" src="../assets/menu/btn_close.svg" class="left-button__image" id="buttonMenu"/>
+		</button>
 		<div class="header-content left-content">
 		</div>
-		<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button rotate-180" id="buttonDropdown"/>
+		<button class="right-button">
+			<img alt="right-menu" src="../assets/menu/ic_regist.svg" class="right-button__image" id="buttonDropdown"/>
+		</button>
 	</div>
 </header>
 
 <!-- Here is our page's main content -->
 <main class="container">
+	<article class="game-section">
+		<div class="box-input__game-title">리그오브레전드 커뮤니티</div>
+	</article>
 	<article class="community-writing-wrapper">
-		<section class="community-section game-section box-input">
-			<div class="community-section__title box-input__title">커뮤니티</div>
-			<input type="text" class="community-section__input-section box-input__input disabled" value="리그오브레전드 커뮤니티">
-		</section>
 		<section class="community-section post-title-section box-input">
 			<div class="community-section__title box-input__title">제목</div>
 			<input type="text" class="community-section__input-section box-input__input" value="회원가입이 안되요" required placeholder="텍스트를 입력하세요">
@@ -59,17 +62,23 @@
 
 <footer class="footer-screen">
 	<div class="left-content">
-		<img alt="attachment-image" class="image-attachment" src="../assets/community/ic_image.svg"/>
+		<button class="button-image" datatype="buttonImage">
+			<input type="file" accept="image/*" class="input-image"/>
+			<img alt="attachment-image" class="image-attachment" src="../assets/community/ic_image.svg"/>
+		</button>
 	</div>
 	<div class="right-content">
-		<div class="counter-button like">
-			<img class="counter-button__icon" alt="tick" src="../assets/community/ic_on.svg"/>
+		<div class="check-box counter-button selected" datatype='checkBox'>
+			<img class="counter-button__icon --check-box__tick" alt="tick" src="../assets/common/ic_circle-tick.svg"/>
+			<img class="counter-button__icon --check-box__un-tick hidden" alt="tick" src="../assets/common/ic_circle-untick.svg"/>
 			비공개
 		</div>
 	</div>
 </footer>
 
 
+<script type="text/javascript" src="../js/checkBox.js"></script>
+<script type="text/javascript" src="../js/buttonImage.js"></script>
 <script language="JavaScript">
 	function navigateToPage(url) {
 		window.open(url, '_self');

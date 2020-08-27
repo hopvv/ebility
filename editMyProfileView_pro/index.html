@@ -21,11 +21,15 @@
 <!--   Top header   -->
 <header class="header-screen">
 	<div class="main-menu-bar" role="menubar">
-		<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button" id="buttonBack"/>
+		<button class="left-button">
+			<img alt="left-menu" src="../assets/menu/ic_back_b.svg" class="left-button__image" id="buttonBack"/>
+		</button>
 		<div class="header-content left-content">
 			내 프로필 관리
 		</div>
-		<img alt="right-menu" src="../assets/menu/btn_close.svg" class="right-button" id="buttonClose"/>
+		<button class="right-button">
+			<img alt="right-menu" src="../assets/menu/ic_regist.svg" class="right-button__image" id="buttonClose"/>
+		</button>
 	</div>
 </header>
 
@@ -35,7 +39,10 @@
 
 		<div class="box-avatar">
 			<img alt="user" src="../assets/profile/ic_profile.png" class="box-avatar__user-image"/>
-			<img alt="edit" src="../assets/profile/btn_profile_edit.svg" class="right-bottom-icon"/>
+			<button class="button-image" datatype="buttonImage">
+				<input type="file" accept="image/*" class="input-image"/>
+				<img alt="edit" src="../assets/profile/btn_profile_edit.svg" class="right-bottom-icon"/>
+			</button>
 			<div class="box-avatar__icon-pro">PRO</div>
 		</div>
 
@@ -46,7 +53,7 @@
 <!--			<div class="box-input__warn">영문, 숫자조합 8자리 이상 입력해주세요.</div>-->
 		</div>
 
-		<div class="my-profile-view__email">myid@email.com</div>
+<!--		<div class="my-profile-view__email">myid@email.com</div>-->
 
 		<div class="social-buttons">
 			<a class="social-icon large-icon" href="#"><img src="../assets/profile/group_6.png" alt="afreeca Tv" class="social-image"/></a>
@@ -77,6 +84,6 @@
 		myid@email.com
 	</div>
 </footer>
-
+<script type="text/javascript" src="../js/buttonImage.js"></script>
 </body>
 </html>

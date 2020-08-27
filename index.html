@@ -14,56 +14,95 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 				rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="../commonStyle/animation.css">
 
 </head>
 <body>
+<!--   Top header   -->
+<header class="header-screen">
+	<div class="main-menu-bar" role="menubar">
+		<button class="left-button">
+			<img alt="left-menu" src="../assets/ic_main_menu.svg" class="left-button__image"/>
+		</button>
+		<div class="header-content">
+
+		</div>
+		<button class="right-button">
+			<img alt="right-menu" src="../assets/ic_main_up_b.svg" class="right-button__image rotate-180" id="buttonDropdown"/>
+		</button>
+
+		<div class="list-item-dropdown hidden" id="listItemDropdown">
+			<ul class="list-items animated animatedFadeInUp fadeIn">
+				<li class="item">리그오브레전드</li>
+				<li class="item">배틀그라운드</li>
+				<li class="item">스타크래프트</li>
+				<li class="item">포트나이트</li>
+				<li class="item">피파온라인</li>
+				<li class="item">던전앤파이터</li>
+			</ul>
+		</div>
+	</div>
+</header>
 
 <!-- Here is our page's main content -->
 <main class="container">
-	<ul>
-		<li><a href="./changeMyInformation_checkPassword/index.html" >changeMyInformation_checkPassword</a></li>
-		<li><a href="./changeMyInformation_confirmPassword/index.html" >changeMyInformation_confirmPassword</a></li>
-		<li><a href="./communityCommentDetails/index.html" >communityCommentDetails</a></li>
-		<li><a href="./communityGameBoardView/index.html" >communityGameBoardView</a></li>
-		<li><a href="./communitySearchResult/index.html" >communitySearchResult</a></li>
-		<li><a href="./communityWriting/index.html" >communityWriting</a></li>
-		<li><a href="./completeOne-OneQuestion/index.html" >completeOne-OneQuestion</a></li>
-		<li><a href="./editMyProfileView_pro/index.html" >editMyProfileView_pro</a></li>
-		<li><a href="./editMyProfileView_user/index.html" >editMyProfileView_user</a></li>
-		<li><a href="./editPlayerProfile_pro/index.html" >editPlayerProfile_pro</a></li>
-		<li><a href="./FAQList/index.html" >FAQList</a></li>
-		<li><a href="./findIdView/index.html" >findIdView</a></li>
-		<li><a href="./forgotPasswordView/index.html" >forgotPasswordView</a></li>
-		<li><a href="./gameDetails_playerDetails_gameEquipment/index.html" >gameDetails_playerDetails_gameEquipment</a></li>
-		<li><a href="./gameDetails_playerDetails_playerGameData/index.html" >gameDetails_playerDetails_playerGameData</a></li>
-		<li><a href="./gameDetails_playerDetails_playerProfile/index.html" >gameDetails_playerDetails_playerProfile</a></li>
-		<li><a href="./gameDetails_playerDetails_salaryAndTransfer/index.html" >gameDetails_playerDetails_salaryAndTransfer</a></li>
-		<li><a href="./gameDetails_playerList/index.html" >gameDetails_playerList</a></li>
-		<li><a href="./gameHomeCommunity/index.html" >gameHomeCommunity</a></li>
-		<li><a href="./gameHomeInfo/index.html" >gameHomeInfo</a></li>
-		<li><a href="./gameHomeRanking/index.html" >gameHomeRanking</a></li>
-		<li><a href="./gameHomeStats/index.html" >gameHomeStats</a></li>
-		<li><a href="./loginScreen/index.html" >loginScreen</a></li>
-		<li><a href="./memberRegistration_proFieldInput/index.html" >memberRegistration_proFieldInput</a></li>
-		<li><a href="./memberRegistration_userFieldInput/index.html" >memberRegistration_userFieldInput</a></li>
-		<li><a href="./memberRegistrationPage_selectMemberType/index.html" >memberRegistrationPage_selectMemberType</a></li>
-		<li><a href="./memberRegistrationPage_selectMemberType_pro/index.html" >memberRegistrationPage_selectMemberType_pro</a></li>
-		<li><a href="./membershipPage_agreeToTermsAndConditions/index.html" >membershipPage_agreeToTermsAndConditions</a></li>
-		<li><a href="./membershipPage_privacyPolicy/index.html" >membershipPage_privacyPolicy</a></li>
-		<li><a href="./myProfileView_user/index.html" >myProfileView_user</a></li>
-		<li><a href="./noteListView/index.html" >noteListView</a></li>
-		<li><a href="./one-oneInquiry/index.html" >one-oneInquiry</a></li>
-		<li><a href="./personalEquipmentManagement_pro/index.html" >personalEquipmentManagement_pro</a></li>
-		<li><a href="./proConversionApplicationPage/index.html" >proConversionApplicationPage</a></li>
-		<li><a href="./proConversionApplicationPage-alertPopup/index.html" >proConversionApplicationPage-alertPopup</a></li>
-		<li><a href="./resetPasswordView/index.html" >resetPasswordView</a></li>
-		<li><a href="./slideMenuAtLogin/index.html" >slideMenuAtLogin</a></li>
-		<li><a href="./slideMenuBeforeLogin/index.html" >slideMenuBeforeLogin</a></li>
-		<li><a href="./topGame_shortcutlayer/index.html" >topGame_shortcutlayer</a></li>
-		<li><a href="./webMain/index.html" >webMain</a></li>
-		<li><a href="./writeOne-OneQuestion/index.html" >writeOne-OneQuestion</a></li>
-	</ul>
+	<article class="game_list">
+		<div class="game-card-item blue-item">
+			<div class="card-content">
+				<div class="game-layer"></div>
+				<img class="image-game" src="../assets/lol/lol-card-1.jpg" alt="game-card"/>
+				<div class="game-name">리그오브레전드</div>
+				<div class="game-intro">세계 최고의
+					MOBA 게임</div>
+				<div class="game-count">
+					<img class="icon-count" src="../assets/gameCard/icCircleUserWhite.svg"/>
+					268
+				</div>
+			</div>
+			<div class="card-footer">
+				<div class="button">게임정보</div>
+				<div class="button">선수정보</div>
+			</div>
+		</div>
+		<div class="game-card-item purple-item">
+			<div class="card-content">
+				<div class="game-layer"></div>
+				<img class="image-game" src="../assets/lol/lol-card-2.jpg" alt="game-card"/>
+				<div class="game-name">리그오브레전드</div>
+				<div class="game-intro">세계 최고의
+					MOBA 게임</div>
+				<div class="game-count">
+					<img class="icon-count" src="../assets/gameCard/icCircleUserWhite.svg"/>
+					268
+				</div>
+			</div>
+			<div class="card-footer">
+				<div class="button">게임정보</div>
+				<div class="button">선수정보</div>
+			</div>
+		</div>
+	</article>
 </main>
+
+<!-- And here is our main footer that is used across all the pages of our website -->
+
+<footer class="footer-screen">
+	<div class="footer-main">
+		<div class="footer-main__title">&copy;e-bility</div>
+		<div class="footer-main__sub-contents">
+			<div class="footer-main__sub-content">
+				이용약관
+			</div>
+			<div class="footer-main__sub-content">
+				개인정보처리방침
+			</div>
+			<div class="footer-main__sub-content">
+				고객센터
+			</div>
+		</div>
+	</div>
+</footer>
 
 </body>
 <script language="javascript">

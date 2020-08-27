@@ -19,12 +19,16 @@
     <header class="header-screen">
       <!--   Top main header   -->
       <div class="main-menu-bar" role="menubar">
-        <img alt="left-menu" src="../assets/ic_main_menu.svg" class="left-button"/>
+				<button class="left-button">
+        	<img alt="left-menu" src="../assets/ic_main_menu.svg" class="left-button__image"/>
+				</button>
         <div class="header-content">
           <img class="icon-content" alt="lol-icon" src="../assets/lol/icon-logo-lol.png"/>
           리그오브레전드
         </div>
-        <img alt="right-menu" src="../assets/ic_main_up_b.svg" class="right-button rotate-180" id="buttonDropdown"/>
+				<button class="right-button">
+        	<img alt="right-menu" src="../assets/ic_main_up_b.svg" class="right-button__image rotate-180" id="buttonDropdown"/>
+				</button>
 
         <div class="list-item-dropdown hidden" id="listItemDropdown">
           <ul class="list-items animated animatedFadeInUp fadeIn">
@@ -40,11 +44,11 @@
 
       <!--   Sub menu   -->
       <ul class="tabs-menu" role="menubar">
-        <li class="tab" role="listitem">선수</li>
-        <li class="tab active" role="listitem">랭킹</li>
-        <li class="tab" role="listitem">통계</li>
-        <li class="tab" role="listitem">커뮤니티</li>
-        <li class="tab" role="listitem">게임소개</li>
+				<li class="tab" role="listitem" onclick="navigateToPage('../gameDetails_playerList/index.html')">선수</li>
+				<li class="tab" role="listitem" onclick="navigateToPage('../gameHomeRanking/index.html')">랭킹</li>
+				<li class="tab active" role="listitem" onclick="navigateToPage('../gameHomeStats/index.html')">통계</li>
+				<li class="tab" role="listitem" onclick="navigateToPage('../gameHomeCommunity/index.html')">커뮤니티</li>
+				<li class="tab" role="listitem" onclick="navigateToPage('../gameHomeInfo/index.html')">게임소개</li>
       </ul>
     </header>
 
@@ -175,6 +179,9 @@
 
   </body>
 	<script language="javascript">
+		function navigateToPage(url) {
+			window.open(url, '_self');
+		}
 		window.onload = function () {
 			const buttonDropdown = document.getElementById("buttonDropdown");
 			if (buttonDropdown) {

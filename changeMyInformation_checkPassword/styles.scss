@@ -20,7 +20,9 @@
     @include main-menu-bar;
 
     .left-button {
-      @include icon-header;
+      .left-button__image {
+        @include icon-header;
+      }
     }
 
     .header-content {
@@ -34,7 +36,9 @@
     }
 
     .right-button {
-      width: 24px;
+      .right-button__image {
+        width: 24px;
+      }
     }
   }
 }

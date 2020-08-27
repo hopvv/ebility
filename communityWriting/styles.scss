@@ -32,40 +32,33 @@
       }
     }
 
-    .right-button {
-      width: 24px;
-    }
+
   }
 }
 
 .container {
   padding-top: 50px;
+  .game-section {
+    background-color: $backgroundColorSearchBar;
+    height: 39px;
+    padding-left: $paddingCommon;
+    display: flex;
+    align-items: center;
+    .box-input__game-title {
+      font-size: $fontHeader;
+      letter-spacing: -0.09px;
+      color: $colorActive;
+      font-weight: $fontWeightMedium;
+    }
+  }
   .community-writing-wrapper {
     padding: 0 $paddingCommon 62px $paddingCommon;
+
 
     .community-section {
       margin-top: 30px;
       @include box-input;
 
-      .community-section__title {
-        //font-size: $fontHeader;
-        //line-height: 16px;
-        //color: $colorBrownishGrey61;
-        //font-weight: $fontWeightMedium;
-        //margin-bottom: 13px;
-      }
-      .community-section__input-section {
-        //font-size: $fontHeaderTitle;
-        //line-height: 19px;
-        ////color: $colorInActive;
-        //font-weight: $fontWeightMedium;
-        //margin-bottom: 11px;
-        //border: none;
-        //
-        //&.disabled {
-        //  pointer-events: none;
-        //}
-      }
       .community-section__textarea-section {
         font-size: $fontXHeader;
         color: $colorInActive;
@@ -99,6 +92,8 @@
   justify-content: space-between;
   .left-content {
     padding-left: $paddingCommon;
+    .button-image {
+    }
   }
   .right-content {
     padding-right: $paddingCommon;
@@ -106,8 +101,12 @@
       @include counter-button;
       font-size: $fontXHeader;
       line-height: 20px;
-      color: $colorActive;
+      color: $colorInActive;
       font-weight: $fontWeightBold;
+
+      &.selected {
+        color: $colorActive;
+      }
     }
   }
 }

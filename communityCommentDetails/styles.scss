@@ -7,6 +7,7 @@
 @import "../commonStyle/menuBar";
 @import "../commonStyle/counterButton";
 @import "../commonStyle/replyBox";
+@import "../commonStyle/boxInput";
 
 .header-screen {
   @include fixed-top;
@@ -32,9 +33,7 @@
       }
     }
 
-    .right-button {
-      width: 24px;
-    }
+
   }
 }
 
@@ -143,8 +142,9 @@
   display: flex;
   align-items: center;
   background-color: $backgroundColorBody;
+  padding-left: 18px;
 
-  .tabs {
-    @include tabs;
+  .big-input-box {
+    @include big-input-box;
   }
 }

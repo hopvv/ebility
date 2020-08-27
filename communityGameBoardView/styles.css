@@ -25,6 +25,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -54,10 +67,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -76,7 +85,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -106,6 +115,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -135,10 +157,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -157,7 +175,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -187,6 +205,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -216,10 +247,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -238,7 +265,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -268,6 +295,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -297,10 +337,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -319,7 +355,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -349,6 +385,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -378,10 +427,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -400,7 +445,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -430,6 +475,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -459,10 +517,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -481,7 +535,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -511,6 +565,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -540,10 +607,6 @@ body {
   display: none;
 }
 
-button {
-  border: none;
-}
-
 input, textarea {
   border: none;
   font-size: 13px;
@@ -562,7 +625,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -592,6 +655,19 @@ input:focus, textarea:focus, select:focus {
   outline-offset: 0;
 }
 
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
 :focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
@@ -621,8 +697,94 @@ body {
   display: none;
 }
 
-button {
+input, textarea {
   border: none;
+  font-size: 13px;
+  color: #424242;
+}
+input::placeholder, textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none !important;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0;
+}
+
+input[type=file] {
+  display: none;
+}
+
+button, input {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-item: center;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 input, textarea {
@@ -643,7 +805,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .header-screen {
@@ -663,7 +825,12 @@ input::placeholder, textarea::placeholder {
   justify-content: space-between;
 }
 .header-screen .main-menu-bar .left-button {
-  padding: 8px 20px;
+  background-color: transparent;
+  display: flex;
+  padding: 0;
+}
+.header-screen .main-menu-bar .left-button .left-button__image {
+  padding: 8px 10px 8px 20px;
   cursor: pointer;
 }
 .header-screen .main-menu-bar .header-content {
@@ -676,11 +843,22 @@ input::placeholder, textarea::placeholder {
   flex: 1;
 }
 .header-screen .main-menu-bar .right-button {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+}
+.header-screen .main-menu-bar .right-button .right-button__image {
   padding: 8px 20px;
   cursor: pointer;
 }
 .header-screen .main-menu-bar.no-left {
   padding-left: 20px;
+}
+.header-screen .main-menu-bar.no-left .left-button {
+  display: none;
+}
+.header-screen .main-menu-bar.no-right .right-button {
+  display: none;
 }
 .header-screen .main-menu-bar .header-content {
   display: flex;
@@ -688,9 +866,6 @@ input::placeholder, textarea::placeholder {
 }
 .header-screen .main-menu-bar .header-content .icon-content {
   margin-right: 5px;
-}
-.header-screen .main-menu-bar .right-button {
-  width: 24px;
 }
 
 .container {
@@ -857,34 +1032,39 @@ input::placeholder, textarea::placeholder {
   display: flex;
   align-items: center;
   background-color: #ffffff;
+  padding-left: 18px;
 }
-.footer-screen .tabs {
-  padding: 0 20px;
+.footer-screen .big-input-box {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  height: 39px;
 }
-.footer-screen .tabs .tab {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  color: #bdbdbd;
-  padding: 0 3px;
-  margin-right: 12px;
-  cursor: pointer;
-  height: 100%;
-  border-bottom: 3px solid transparent;
-}
-.footer-screen .tabs .tab.active {
-  font-weight: 700;
+.footer-screen .big-input-box .big-input-box__label {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 500;
   color: #212121;
-  border-bottom: 3px solid #3c5afe;
+  margin-right: 18px;
+  letter-spacing: -0.1px;
 }
-.footer-screen .tabs.no-border .tab {
+.footer-screen .big-input-box .big-input-box__label {
+  flex: 1;
   border: none;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  letter-spacing: -0.1px;
+}
+.footer-screen .big-input-box .big-input-box__label.disabled {
+  pointer-events: none;
+}
+.footer-screen .big-input-box .big-input-box__label::placeholder {
+  color: #bdbdbd;
+}
+.footer-screen .big-input-box .big-input-box__label:focus {
+  border-bottom: 1px solid #3c5afe;
+  color: #424242;
+  transition: border-bottom-color 0.6s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 /*# sourceMappingURL=styles.css.map */
