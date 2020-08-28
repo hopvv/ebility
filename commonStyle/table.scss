@@ -27,5 +27,9 @@
 }
 
 @mixin table-has-short-show {
+  table-layout: fixed;
 
+  th, td {
+    line-break: auto;
+  }
 }

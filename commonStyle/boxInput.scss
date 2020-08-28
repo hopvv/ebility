@@ -75,9 +75,14 @@
       align-items: center;
       border-bottom: 1px solid $colorVeryLightPinkThree;
       padding: 0 20px;
-      justify-content: flex-end;
+      justify-content: center;
+      cursor: pointer;
 
       &:first-child {
+      }
+
+      &:focus {
+        background-color: $backgroundColorSearchBar;
       }
     }
   }
@@ -89,6 +94,14 @@
 
     &.--right-side {
       right: 0;
+    }
+
+    &.--toggle-dropdown-button {
+      padding-left: 100%;
+      top: 28px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      cursor: pointer;
     }
   }
 
@@ -121,6 +134,7 @@
 
 @mixin big-input-box {
   display: flex;
+  align-items: center;
 
   .big-input-box__label {
     line-height: 18px;
@@ -130,7 +144,7 @@
     margin-right: 18px;
     letter-spacing: -0.1px;
   }
-  .big-input-box__label {
+  .big-input-box__input {
     flex: 1;
     border: none;
     line-height: 20px;
@@ -151,5 +165,9 @@
       transition: border-bottom-color 0.6s ease-out;
       transition: color 0.2s ease-out;
     }
+  }
+
+  .big-input-box__right-button {
+    padding: 5px $paddingCommon;
   }
 }
